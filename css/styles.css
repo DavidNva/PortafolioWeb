@@ -300,28 +300,7 @@ nav li:first-child{
     
 }
 
-@media (max-width: 500px) {
-    .contenedor-proyectos{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
 
-    .proyectos{
-        width: 80vw!important;
-    }
-    .titulo-proyecto{
-        background-color: #3F0894!important;
-        padding-top: 1.5rem!important;
-        padding-bottom: 1.5rem!important;
-    }
-    .img-proyecto{
-        height: 40vw!important;
-       
-    }
-    .header-proyecto{
-        margin-bottom: 2rem!important;
-    }
-} 
 .proyectos{
     width: 35vw;
     /* height: 25vw; */
@@ -370,38 +349,56 @@ nav li:first-child{
     padding: .3rem;
 }
 
-.csharp, .php{
+.csharp, .php, .visual_IDE{
     background-color: #3F0894;
     color: white;
 }
 
-.asp-net{
+.asp-net{   
     background-color: #1B80C0;
     color: white;
 }
 
 .JavaScript{
     background-color: #EFD81D;
+    color: black;
 }
 .ajax{
     background-color: #F47F27;
 }
 .bootstrap{
-    background-color: #7818F7;
+    background-color: #673AB7;
     color: white;
 }
 .joomla{
     background-color: #5594CF;
     color: white;
 }
-.css3{
-    background-color: #2F53E7;
+.css3, .visualStudioCode{
+    background-color: #039BE5;
+    color: white;
+}
+.sql{
+    background-color: #A91D22;
+    color: white;
+}
+.mysql{
+    background-color: #00758F;
     color: white;
 }
 .html{
     background-color: #E6532D;
     color: white;
 }
+.github, .notion{
+    background-color: black;
+    color: white;
+}
+.arduino{
+    background-color: #00979C;
+    color: white;
+}
+
 .seccion-sobremi{
     margin-bottom: 4rem;
 }
@@ -414,4 +411,120 @@ nav li:first-child{
 .header-proyecto{
     padding-top: 1rem;
     color: white;
+}
+
+.skills-items, .tecnologias{
+    text-align: center;
+}
+
+.skills-lenguajes{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+   margin: 0 auto;
+   
+}
+.skills-lenguajes-items{
+  
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+
+.skills-lenguajes-items p{
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    border-radius: .3rem;
+    margin-bottom: .5rem; 
+    text-align: center;
+    align-items: center;
+    width: 50%;
+    font-weight: bold;
+}
+
+.skills-lenguajes-items svg{
+    padding: 1rem;
+}
+.skills-lenguajes-items img{
+    width: 150px;
+    height: 128px;
+}
+.tecnologias-herramientas, .frontend, .footer{
+    margin-top: 4rem;
+}
+.seccion-proyectos{
+    margin-bottom: 4rem;
+}
+@media (max-width: 510px) {
+    .contenedor-proyectos{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .proyectos{
+        width: 80vw!important;
+    }
+    .titulo-proyecto{
+        background-color: #3F0894!important;
+        padding-top: 1.5rem!important;
+        padding-bottom: 1.5rem!important;
+    }
+    .img-proyecto{
+        height: 40vw!important;
+       
+    }
+    .header-proyecto{
+        margin-bottom: 2rem!important;
+    }
+    .skills-lenguajes{
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+    }
+    .skills-lenguajes-items p{
+        width: 80%;
+    }
+   
+} 
+.asp-net-framework{
+    align-self: center;
+}
+
+@media (max-width: 400px) {
+    .skills-lenguajes{
+        grid-template-columns: repeat(1, 1fr);
+        width: 70%;
+       
+    }
+
+    .skills-lenguajes-items svg{
+        width: 150px;
+        height: 150px;
+    }
+    .skills-lenguajes-items p{
+        width: 80%;
+    }
+   
+}
+
+.footer{
+    background-color: var(--secundario);
+    color: white;
+    padding: 1rem;
+}
+
+.frontend{
+    background-color: var(--grisClaro);
+   
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.frontend .skills-lenguajes-items svg{
+    background-color: var(--secundario);
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
