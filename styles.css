@@ -216,7 +216,7 @@ p {
 /* Modificar en tu archivo CSS, en la sección del Hero */
 .hero {
     min-height: 100vh; /* Cambiar height por min-height */
-    background: url('images/fondo_portafolio_web.jpg') center center no-repeat;
+    background: url('images/fondo_portafolio_web.webp') center center no-repeat;
     background-size: cover;
     position: relative;
     color: var(--white-color);
