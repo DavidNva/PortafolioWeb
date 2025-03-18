@@ -1,6 +1,6 @@
 # Portafolio Web - David Nava
 
-![Banner del Portafolio](images/PortafolioWeb.png)
+![Banner del Portafolio](images/PortafolioWeb.webp)
 
 ## 📋 Descripción
 
