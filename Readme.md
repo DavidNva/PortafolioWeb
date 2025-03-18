@@ -1,52 +1,97 @@
-# Integración de PayPal en ASP.NET MVC
+# Portafolio Web - David Nava
 
-Este proyecto proporciona una guía paso a paso para integrar PayPal en una aplicación ASP.NET MVC (.NET Framework 4.7.2). La integración permite procesar pagos a través de la API REST de PayPal y puede ser utilizada en proyectos de comercio electrónico, plataformas de donaciones u otros sistemas que requieran pagos en línea.
+![Banner del Portafolio](images/PortafolioWeb.png)
 
----
+## 📋 Descripción
 
-## 🚀 Requisitos
+Este proyecto es un portafolio web profesional y responsive desarrollado para mostrar mis habilidades, experiencia y proyectos como Desarrollador de Software. Actualzado a una versión 2.
 
-Antes de comenzar, asegúrate de contar con lo siguiente:
+## ✨ Características
 
-- Visual Studio 2019 o superior
-- .NET Framework 4.7.2
-- Cuenta de desarrollador en [PayPal Developer](https://developer.paypal.com/){:target="_blank"}
-- Postman (opcional, para probar llamadas a la API de PayPal)
+- **Diseño Responsive**: Compatible con dispositivos móviles, tablets y escritorio
+- **Navegación Fluida**: Menú intuitivo con smooth scrolling
+- **Secciones Completas**: Presentación, sobre mí, habilidades, experiencia, proyectos y contacto
+- **Filtrado de Proyectos**: Sistema de filtrado por categorías (Web, ASP.NET, APIs)
+- **Modales Detallados**: Información completa de cada proyecto con imágenes y descripciones
+- **Integración con Redes**: Enlaces a GitHub, LinkedIn y correo electrónico
+- **Descarga de CV**: Opción para descargar currículum en formato PDF
 
----
+## 🛠️ Tecnologías Utilizadas
 
-## 🔑 Configuración de Credenciales en PayPal
+- **HTML5**: Estructura semántica y moderna
+- **CSS3**: Estilos personalizados y animaciones
+- **JavaScript**: Interactividad y manipulación del DOM
+- **Bootstrap 5**: Framework CSS para diseño responsive
+- **Font Awesome**: Íconos vectoriales
+- **Google Fonts**: Tipografías personalizadas
+- **Devicons**: Íconos para tecnologías y herramientas
+- **EmailJS**: Funcionalidad de formulario de contacto
 
-Para integrar PayPal en tu aplicación, debes generar credenciales API siguiendo estos pasos:
+## 🚀 Uso
 
-1. **Registrarse en PayPal Developer**
-   - Accede a [PayPal Developer](https://developer.paypal.com/){:target="_blank"}.
-   - Inicia sesión o crea una cuenta si aún no la tienes.
-
-2. **Crear una aplicación de prueba**
-   - Dirígete a **Dashboard > My Apps & Credentials**.
-   - Selecciona **Sandbox** y haz clic en **Create App**.
-   - Asigna un nombre a la aplicación y selecciona la cuenta de negocio.
-   - Guarda el **Client ID** y **Secret**, ya que los necesitarás más adelante.
-
-3. **Configurar Webhooks (Opcional)**
-   - En la misma sección de **My Apps & Credentials**, puedes agregar webhooks para recibir notificaciones sobre pagos completados.
-
----
-
-## 🏗️ Instalación del Proyecto
-
-1. **Clonar el repositorio**
+1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tu-repo/paypal-integration-mvc.git
-   cd paypal-integration-mvc
+   git clone https://github.com/DavidNva/PortafolioWeb.git
    ```
 
-2. **Abrir el proyecto en Visual Studio**
-   - Abre el archivo `PaypalIntegration.sln` en Visual Studio.
+2. **Abrir el proyecto**:
+   - Navega al directorio del proyecto
+   - Abre el archivo `index.html` en tu navegador
 
-3. **Configurar credenciales de PayPal**
-   - En el archivo `appsettings.json` o `Web.config`, agrega las credenciales obtenidas en PayPal:
-     ```json
-     {
-       "PayPal":
+3. **Desarrollo local**:
+   - Para desarrollo, se recomienda usar un servidor local como Live Server en VSCode
+
+## 📁 Estructura del Proyecto
+
+```
+/
+├── index.html                # Archivo principal
+├── styles.css                # Estilos personalizados
+├── scripts.js                # Funcionalidades JavaScript
+├── images/                   # Imágenes del sitio y proyectos
+│   ├── perfil_original.jpg
+│   └── [imágenes de proyectos]
+└── files/                    # Archivos descargables como el CV
+    └── CV_Nombre_Desarrollador_Software_Tecnologia.pdf
+```
+
+## 📱 Secciones del Portafolio
+
+1. **Inicio**: Presentación personal con foto y enlaces de contacto
+2. **Sobre Mí**: Información profesional y personal
+3. **Habilidades**: Tecnologías dominadas y herramientas utilizadas
+4. **Experiencia y Educación**: Historial profesional y formación académica
+5. **Proyectos**: Galería de proyectos con sistema de filtrado
+6. **Contacto**: Formulario para comunicación directa
+
+## 🌐 Proyectos Destacados
+
+- **Sistema de Gestión de Préstamos y Laboratorios - ITSSNP**: Plataforma institucional para administrar préstamos de herramientas y gestionar laboratorios
+- **Chatbot Inteligente con WhatsApp y ChatGPT**: API que conecta WhatsApp con bases de datos mediante consultas en lenguaje natural
+- **API de Procesamiento de Documentos PDF**: Herramienta para extraer y analizar información de documentos PDF con IA
+- **Sistema de Gestión de Biblioteca**: Aplicación web para administrar préstamos de libros en una biblioteca pública
+- **Integración de PayPal con ASP.NET MVC**: Implementación de pagos en línea con PayPal
+
+## 👨‍💻 Personalización
+
+Para personalizar este portafolio:
+
+1. Modifica el archivo `index.html` para actualizar la información personal
+2. Actualiza las imágenes en la carpeta `images/` con tus propias fotos
+3. Cambia los estilos en `styles.css` para ajustar colores y diseño
+4. Reemplaza los proyectos en la sección correspondiente
+
+## 📞 Contacto
+
+- **Email**: david.nava.garcia4@gmail.com
+- **LinkedIn**: [david-nava-garcia](https://www.linkedin.com/in/david-nava-garcia/)
+- **GitHub**: [DavidNva](https://github.com/DavidNva)
+- **Web**: [davidnavadev.netlify.app](https://davidnavadev.netlify.app)
+
+## 📄 Licencia
+
+Este proyecto está disponible como código abierto bajo los términos de la licencia MIT.
+
+---
+
+Desarrollado por David Nava © 2024
