@@ -1,515 +1,866 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>David NG</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>David Nava | Desarrollador de Software</title>
     
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
-<body >
-
-    <nav class="nav">
-        <ul class="barra-lateral">
-          
-            <li onclick="ocultarBarraLateral()"><a class="inicio" href="#"> 
-                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path  fill="#fff" d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></
-            </svg> </a></li>
-           
-            <li onclick="ocultarBarraLateral()" ><a href="#" >Inicio</a></li>
-            <li onclick="ocultarBarraLateral()"><a href="#sobremi">Sobre mi</a></li>
-            <li onclick="ocultarBarraLateral()"><a href="#proyectos">Proyectos</a></li>
-            <li onclick="ocultarBarraLateral()"><a href="#skills">Skills</a></li>
-            <li onclick="ocultarBarraLateral()"><a href="#contacto">Contacto</a></li>
-        </ul>
-       
-        <ul > <!--PC-->
-            <li><a href="#" class="inicio">DAVID NG</a></li>
-            <li class="ocultarEnMovil"><a href="#" >Inicio</a></li>
-            <li class="ocultarEnMovil"><a href="#sobremi">Sobre Mi</a></li>
-            <li class="ocultarEnMovil"><a href="#proyectos">Proyectos</a></li>
-            <li class="ocultarEnMovil"><a href="#skills">Skills</a></li>
-            <li class="ocultarEnMovil"><a href="#contacto">Contacto</a></li>
-            <li class="menu-boton" onclick="mostrarBarraLateral()"><a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path  fill="#fff" d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></svg> </a></li>
-        </ul>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">David<span> Nava</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <main>
-        <section class="imagen-fondo" > 
-            <div class="contenido-imagen-fondo" >
-                <h2 data-aos="fade-down">Desarrollador Web <span></span> </h2> 
-                <div class="ubicacion" data-aos="fade-down">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="11" r="3" />
-                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-                      </svg>
-                      <p>Zacatlán, Puebla</p>
-                </div>
-                
-                <a data-aos="fade-down" class="boton" title="Descargar Curriculum .PDF" href="https://drive.google.com/file/d/1W8KnP_V9t0bZj6zeo0XFEbZe3NMRhzFQ/view?usp=drive_link" target="_blank" >Curriculum <svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960" width="30" >
-                    <path fill="#fff" d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a> 
-            </div><!--Punto contenido hero-->
-           
-        </section>
-        
-        <section class="seccion-sobremi" id="sobremi">
-            <div class="div-sobreMi">
-                <div class="div-blanco" ></div>
-                <div class="header-descripciones" >
-                    <h2 >Sobre Mi</h2>
-                </div>
-                <div class="sobre-mi" data-aos="zoom-in" >
-                    
-                    <div class="foto">
-                        <!-- <img src="img/perfil_original.jpg" alt=""> -->
-                        <!-- <img src="img/deiv-perfil.jpg" alt=""> -->
-                        <img src="img/deiv-perfil.jpg" alt="">
-                        <!-- <img src="img/perfil_original-sinfondo.png" alt=""> -->
-                    </div>
-                    <div class="descripcion-sobremi sombras">
-                        <h3>Hola, soy David Nava</h3>
-                        <!-- <p>Estudiante de Ingenieria Informática con habilidaes en frontend y backend usando C# y ASP.NET, CSS, Boostrap, HTML. Así como, conocimientos de base de datos con SQL, Diseño Web, analisis de datos usando BI. Suelo adaparme al trabajo en equipo y a nuevas tecnologias.</p> -->
-
-                        <!-- <p>Apasionado de la programación, el futbol, la música y el café. Responsabilidad, honestidad y creatividad son aspectos que me definen. Me encanta aprender cosas nuevas y ver que puedo lograr y realizar lo que me proponga. A continuación podrás ver los proyectos que he realizado hasta el momento en el transcurso de mi carrera universitaria. </p>
-         -->
-         <!-- <p>
-            Soy David, estudiante de Ingeniería Informática con pasión por la programación, el fútbol y el café. Disfruto escuchar música y siempre estoy en busca de nuevos conocimientos. Valoro la honestidad, la creatividad y la responsabilidad en todo lo que hago.
-         </p> -->
-         <!-- <p>
-            Estudiante de Ingeniería Informática apasionado por la programación, el fútbol y el café. Disfruto escuchar música y siempre estoy en busca de nuevos conocimientos. Me identifico con la honestidad, la creatividad y la responsabilidad en todo lo que hago, y estoy emocionado por las oportunidades que me permitan crecer tanto personal como profesionalmente.
-         </p> -->
-         <!-- <p>
-            Estudiante de Ingeniería Informática apasionado por la programación, el fútbol y el café. Disfruto escuchar música y siempre estoy en busca de nuevos conocimientos. Me identifico con la honestidad, la creatividad y la responsabilidad en todo lo que hago. A continuación podrás ver los proyectos que he realizado hasta el momento en el transcurso de mi carrera universitaria.
-         </p> -->
-         <p>
-            Apasionado por la programación, el fútbol y el café. Disfruto escuchar música y siempre estoy en busca de nuevos conocimientos. Me identifico con la honestidad, creatividad y dedicación en todo lo que hago. A continuación podrás ver los proyectos que he realizado hasta el momento en el transcurso de mi carrera universitaria.
-         </p>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-    
-    <section class="seccion-proyectos" id="proyectos">
-        <div class="div-proyectos">
-            <div class="div-blanco" ></div>
-            <div class="header-descripciones header-proyecto" >
-                <h2 >Proyectos</h2> 
-            </div>
-        </div>
-        <div class="contenedor-proyectos" data-aos="zoom-in">  
-            <div class="proyectos proyecto-1">
-                <div class="titulo-proyecto ">Sistema de Gestión de Unidad de Prácticas</div>
-                <img class="img-proyecto" src="img/sigup_web.png" alt="">
-                <div class="lenguajes-utilizados">
-                    <div class="items-lenguajes csharp" >C#</div>
-                    <div class="items-lenguajes asp-net" >ASP.NET </div>
-                    <div class="items-lenguajes JavaScript" >JavaScript</div>
-                    <div class="items-lenguajes ajax" >Ajax</div>
-                    <div class="items-lenguajes bootstrap">Boostrap 5</div>
-                    <div class="items-lenguajes sql" >SQL</div>
-                </div>
-            </div>
-            <div class="proyectos proyecto-4" data-aos="zoom-in">
-                <div class="titulo-proyecto">Sistema de Gestión de una Biblioteca Pública</div>
-                <img class="img-proyecto" src="img/bibliotecaweb.png" alt="">
-                <div class="lenguajes-utilizados">
-                    <div class="items-lenguajes csharp" >C#</div>
-                    <div class="items-lenguajes asp-net" >ASP.NET </div>
-                    <div class="items-lenguajes JavaScript" >JavaScript</div>
-                    <div class="items-lenguajes ajax" >Ajax</div>
-                    <div class="items-lenguajes bootstrap">Boostrap 5</div>
-                    <div class="items-lenguajes sql" >SQL</div>
-                </div>
-            </div>
-            <div class="proyectos proyecto-2" data-aos="zoom-in">
-                <div class="titulo-proyecto">Sitio Web del ITSSNP</div>
-                <img class="img-proyecto" src="img/itssnp_page.png" alt="">
-                <div class="lenguajes-utilizados">
-                    <div class="items-lenguajes php" >PHP</div>
-                    <div class="items-lenguajes JavaScript" >JavaScript</div>
-                    <div class="items-lenguajes css3" >CSS 3</div>
-                    <div class="items-lenguajes joomla" >JOOMLA</div>
-                    <div class="items-lenguajes bootstrap">Boostrap 5</div>
-                </div>
-            </div>
-           
-           
-            
-            <div class="proyectos proyecto-3" data-aos="zoom-in">
-                <div class="titulo-proyecto">Mi Portafolio Web</div>
-                <img class="img-proyecto" src="img/miportafolio.png" alt="">
-                <div class="lenguajes-utilizados">
-                    <div class="items-lenguajes JavaScript" >JavaScript</div>
-                    <div class="items-lenguajes css3" >CSS 3</div>
-                    <div class="items-lenguajes html" >HTML</div>
-                </div>
-            </div>
-           
-
-
-        </div>
-    </section>
-    <section class="seccion-sobremi" id="skills">
-        <div class="div-proyectos">
-            <div class="div-blanco" ></div>
-            <div class="header-descripciones header-skills" >
-                <h2 >Skills</h2>  
-            </div>
-        </div>
-        <div data-aos="zoom-in" class="backend">
-            <div class="skills-items" >
-                <h2 >Backend </h2>  
-            </div>
-            <div class="skills-lenguajes">
-                <div class="skills-lenguajes-items " data-aos="zoom-in"> 
-                    <svg preserveAspectRatio="xMidYMid" viewBox="0 -1.428 255.582 290.108" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg"><path d="m255.569 84.452c-.002-4.83-1.035-9.098-3.124-12.76-2.052-3.603-5.125-6.622-9.247-9.009-34.025-19.619-68.083-39.178-102.097-58.817-9.17-5.294-18.061-5.1-27.163.27-13.543 7.986-81.348 46.833-101.553 58.536-8.321 4.818-12.37 12.19-12.372 21.771-.013 39.455 0 78.91-.013 118.365 0 4.724.991 8.91 2.988 12.517 2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.27 34.015-19.64 68.075-39.199 102.105-58.818 4.217-2.44 7.333-5.544 9.386-9.252 1.994-3.608 2.987-7.793 2.987-12.518 0 0 0-78.889-.013-118.345" fill="#a179dc"/><path d="m128.182 143.241-125.194 72.084c2.053 3.711 5.169 6.813 9.386 9.254 20.206 11.703 88.02 50.547 101.56 58.536 9.106 5.373 17.997 5.565 27.17.27 34.015-19.64 68.075-39.199 102.105-58.818 4.217-2.44 7.333-5.544 9.386-9.252z" fill="#280068"/><path d="m255.569 84.452c-.002-4.83-1.035-9.098-3.124-12.76l-124.263 71.55 124.413 72.073c1.994-3.608 2.985-7.793 2.987-12.518 0 0 0-78.889-.013-118.345" fill="#390091"/><g fill="#fff"><path d="m201.892 116.294v13.474h13.474v-13.474h6.737v13.474h13.474v6.737h-13.474v13.473h13.474v6.737h-13.474v13.474h-6.737v-13.474h-13.474v13.474h-6.737v-13.474h-13.473v-6.737h13.473v-13.473h-13.473v-6.737h13.473v-13.474zm13.474 20.21h-13.474v13.474h13.474z"/><path d="m128.457 48.626c35.144 0 65.827 19.086 82.262 47.456l-.16-.273-41.35 23.808c-8.146-13.793-23.08-23.102-40.213-23.294l-.54-.003c-26.125 0-47.305 21.18-47.305 47.305a47.08 47.08 0 0 0 6.239 23.47c8.154 14.235 23.483 23.836 41.067 23.836 17.693 0 33.109-9.723 41.221-24.11l-.197.345 41.287 23.918c-16.255 28.13-46.518 47.157-81.253 47.536l-1.058.006c-35.255 0-66.025-19.204-82.419-47.724-8.003-13.923-12.582-30.064-12.582-47.277 0-52.466 42.532-95 95-95z"/></g></svg>
-                    <p class="csharp">C#</p>
-                </div>
-
-                <!-- <div class="skills-lenguajes-items asp-net-framework"> 
-                    <svg width="100px" height="100px" viewBox="0 0 256 244" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                        <defs>
-                            <linearGradient x1="49.9972467%" y1="-19.5160457%" x2="49.9972467%" y2="129.625092%" id="linearGradient-1">
-                                <stop stop-color="#0994DC" offset="0%"></stop>
-                                <stop stop-color="#66CEF5" offset="35.000601%"></stop>
-                                <stop stop-color="#66CEF5" offset="35.000601%"></stop>
-                                <stop stop-color="#127BCA" offset="84.616101%"></stop>
-                                <stop stop-color="#127BCA" offset="84.616101%"></stop>
-                                <stop stop-color="#127BCA" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="50.0007616%" y1="-19.5161868%" x2="50.0007616%" y2="129.624154%" id="linearGradient-2">
-                                <stop stop-color="#0E76BC" offset="0%"></stop>
-                                <stop stop-color="#36AEE8" offset="36.0001%"></stop>
-                                <stop stop-color="#36AEE8" offset="36.0001%"></stop>
-                                <stop stop-color="#00ADEF" offset="84.616101%"></stop>
-                                <stop stop-color="#00ADEF" offset="84.616101%"></stop>
-                                <stop stop-color="#00ADEF" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="49.9991979%" y1="110.921751%" x2="49.9991979%" y2="-6.21395776%" id="linearGradient-3">
-                                <stop stop-color="#1C63B7" offset="0%"></stop>
-                                <stop stop-color="#33BDF2" offset="50%"></stop>
-                                <stop stop-color="#33BDF2" stop-opacity="0.41960785" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="50.0009899%" y1="-19.5149993%" x2="50.0009899%" y2="129.627315%" id="linearGradient-4">
-                                <stop stop-color="#166AB8" offset="0%"></stop>
-                                <stop stop-color="#36AEE8" offset="39.999399%"></stop>
-                                <stop stop-color="#36AEE8" offset="39.999399%"></stop>
-                                <stop stop-color="#0798DD" offset="84.616101%"></stop>
-                                <stop stop-color="#0798DD" offset="84.616101%"></stop>
-                                <stop stop-color="#0798DD" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="49.9985422%" y1="-19.5211325%" x2="49.9985422%" y2="129.626892%" id="linearGradient-5">
-                                <stop stop-color="#124379" offset="0%"></stop>
-                                <stop stop-color="#1487CB" offset="38.9999%"></stop>
-                                <stop stop-color="#1487CB" offset="38.9999%"></stop>
-                                <stop stop-color="#165197" offset="78.022802%"></stop>
-                                <stop stop-color="#165197" offset="78.022802%"></stop>
-                                <stop stop-color="#165197" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="0.000304652977%" y1="50.000544%" x2="100.000291%" y2="50.000544%" id="linearGradient-6">
-                                <stop stop-color="#33BDF2" stop-opacity="0.69803923" offset="0%"></stop>
-                                <stop stop-color="#1DACD8" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="50.0095709%" y1="94.6864084%" x2="50.0095709%" y2="-3.02458407%" id="linearGradient-7">
-                                <stop stop-color="#136AB4" offset="0%"></stop>
-                                <stop stop-color="#59CAF5" stop-opacity="0.54901963" offset="60.000002%"></stop>
-                                <stop stop-color="#59CAF5" stop-opacity="0.23529412" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="-0.000760861053%" y1="49.999714%" x2="99.9992241%" y2="49.999714%" id="linearGradient-8">
-                                <stop stop-color="#05A1E6" stop-opacity="0.24705882" offset="0%"></stop>
-                                <stop stop-color="#05A1E6" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="49.9983236%" y1="124.313712%" x2="49.9983236%" y2="-9.42137278%" id="linearGradient-9">
-                                <stop stop-color="#318ED5" offset="0%"></stop>
-                                <stop stop-color="#38A7E4" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="49.99857%" y1="91.1999524%" x2="49.99857%" y2="-76.7854074%" id="linearGradient-10">
-                                <stop stop-color="#05A1E6" offset="0%"></stop>
-                                <stop stop-color="#05A1E6" stop-opacity="0.54901963" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="50.0000694%" y1="100.01049%" x2="50.0000694%" y2="0.0101898204%" id="linearGradient-11">
-                                <stop stop-color="#1959A6" offset="0%"></stop>
-                                <stop stop-color="#05A1E6" offset="50%"></stop>
-                                <stop stop-color="#05A1E6" offset="50%"></stop>
-                                <stop stop-color="#7EC5EA" offset="91.758698%"></stop>
-                                <stop stop-color="#7EC5EA" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="59.8041209%" y1="94.5677442%" x2="38.4710575%" y2="5.75513731%" id="linearGradient-12">
-                                <stop stop-color="#165096" offset="0%"></stop>
-                                <stop stop-color="#0D82CA" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="49.9946843%" y1="76.9980959%" x2="49.9946843%" y2="-3.29893613%" id="linearGradient-13">
-                                <stop stop-color="#05A1E6" offset="0%"></stop>
-                                <stop stop-color="#0495D6" offset="87.362701%"></stop>
-                                <stop stop-color="#0495D6" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="65.2631169%" y1="-4.16143813%" x2="34.2626975%" y2="105.843625%" id="linearGradient-14">
-                                <stop stop-color="#38A7E4" stop-opacity="0.32941177" offset="0%"></stop>
-                                <stop stop-color="#0E88D3" offset="96.153301%"></stop>
-                                <stop stop-color="#0E88D3" offset="96.153301%"></stop>
-                                <stop stop-color="#0E88D3" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="50.016714%" y1="-0.295776148%" x2="50.016714%" y2="101.881944%" id="linearGradient-15">
-                                <stop stop-color="#168CD4" offset="0%"></stop>
-                                <stop stop-color="#1C87CC" offset="50%"></stop>
-                                <stop stop-color="#154B8D" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="16.6738062%" y1="205.564966%" x2="87.8125992%" y2="-19.8362753%" id="linearGradient-16">
-                                <stop stop-color="#97D6EE" offset="0%"></stop>
-                                <stop stop-color="#55C1EA" offset="70.329303%"></stop>
-                                <stop stop-color="#55C1EA" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="6.89015912%" y1="6.30038251%" x2="75.7828966%" y2="116.770678%" id="linearGradient-17">
-                                <stop stop-color="#7ACCEC" offset="0%"></stop>
-                                <stop stop-color="#3FB7ED" offset="100%"></stop>
-                            </linearGradient>
-                            <linearGradient x1="49.9966533%" y1="6.36281892%" x2="49.9966533%" y2="127.96135%" id="linearGradient-18">
-                                <stop stop-color="#1DA7E7" offset="0%"></stop>
-                                <stop stop-color="#37ABE7" stop-opacity="0" offset="100%"></stop>
-                            </linearGradient>
-                        </defs>
-                        <g>
-                            <g transform="translate(26.734177, 116.658228)" fill="#000000">
-                                <path d="M187.534955,11.347281 C187.534955,10.9179949 187.417163,10.611119 187.175016,10.4105316 C186.906783,10.1946329 186.442823,10.0795139 185.79699,10.0795139 L184.868504,10.0795139 L184.868504,12.6314127 L185.989071,12.6314127 C187.023846,12.6314127 187.534955,12.2021266 187.534955,11.347281 L187.534955,11.347281 Z M188.982651,16.6680304 L187.706702,16.6680304 L186.893011,14.8725468 C186.479765,13.9728203 186.038084,13.522957 185.555573,13.522957 L184.868504,13.522957 L184.868504,16.6680304 L183.817284,16.6680304 L183.817284,9.18367595 L185.923613,9.18367595 C186.860282,9.18367595 187.56339,9.38653165 188.046307,9.80957975 C188.455259,10.1734076 188.659735,10.6398785 188.659735,11.2206582 C188.659735,11.7359797 188.492849,12.1694785 188.156565,12.5290127 C187.829355,12.8931646 187.358914,13.1385519 186.757882,13.2654987 L186.757882,13.2979038 C187.175016,13.3960911 187.59215,13.8541367 187.996889,14.6802228 L188.982651,16.672081 L188.982651,16.6680304 Z M191.313709,12.9994532 C191.313709,11.5272101 190.810864,10.2839899 189.808737,9.29822785 C188.802722,8.31278987 187.575785,7.81804557 186.128089,7.81804557 C184.635188,7.81804557 183.392292,8.31278987 182.40653,9.30673418 C181.420768,10.3045671 180.930317,11.539281 180.930317,12.9994532 C180.930317,14.4923544 181.441345,15.7395443 182.455623,16.7334886 C183.45775,17.7271089 184.684606,18.2178835 186.128089,18.2178835 C187.56339,18.2178835 188.790246,17.7231392 189.800555,16.7168 C190.810864,15.7270684 191.313709,14.4841722 191.313709,12.9994532 L191.313709,12.9994532 Z M192.021112,12.9670481 C192.021112,14.6196253 191.452808,16.0058329 190.311907,17.1221873 C189.170763,18.2469671 187.772079,18.8070886 186.09933,18.8070886 C184.414671,18.8070886 183.016069,18.2551494 181.90336,17.1712 C180.791299,16.0712911 180.239036,14.6889722 180.239036,13.0122532 C180.239036,11.3721519 180.80337,9.99404557 181.932119,8.86140759 C183.060869,7.73265823 184.467654,7.16832405 186.148666,7.16832405 C187.796626,7.16832405 189.178945,7.70811139 190.299512,8.78355443 C191.448514,9.88775696 192.021112,11.2782582 192.021112,12.9670481 L192.021112,12.9670481 Z"></path>
-                                <path d="M32.0650208,33.8363139 L28.437679,33.8363139 L28.437679,13.0773063 C28.437679,11.4375291 28.5456689,9.44178228 28.738722,7.08617722 L28.6568992,7.08617722 C28.3172942,8.46420253 28.0064486,9.46211646 27.7326258,10.079838 L17.1895575,33.8363139 L15.4228334,33.8363139 L4.85913924,10.2515848 C4.56140962,9.5929519 4.24994835,8.53363038 3.93488203,7.08617722 L3.85638076,7.08617722 C3.96761924,8.32518481 4.02978835,10.3333266 4.02978835,13.1182177 L4.02978835,33.8363139 L0.532982278,33.8363139 L0.532982278,2.92293671 L5.31785722,2.92293671 L14.8018876,24.4792709 C15.5174157,26.1030076 15.9797063,27.3380456 16.2044678,28.1804962 L16.3549732,28.1804962 C16.9723382,26.4913823 17.4630967,25.2235342 17.8354147,24.3892658 L27.5236132,2.92293671 L32.0630765,2.92293671 L32.0630765,33.8363139 L32.0650208,33.8363139 Z"></path>
-                                <path d="M43.2232182,33.8353418 L39.6982765,33.8353418 L39.6982765,11.7594734 L43.2232182,11.7594734 L43.2232182,33.8353418 L43.2232182,33.8353418 Z M43.8327575,3.84591392 C43.8327575,4.49628354 43.6037347,5.04004051 43.1495777,5.48601519 C42.7040081,5.93158481 42.1520689,6.15671899 41.5055878,6.15671899 C40.8757954,6.15671899 40.3277448,5.94073924 39.8782056,5.51056203 C39.4283423,5.07706329 39.2071777,4.5248 39.2071777,3.84591392 C39.2071777,3.20793924 39.4296385,2.66418228 39.8782056,2.22250127 C40.3277448,1.78082025 40.8757954,1.56816203 41.5055878,1.56816203 C42.1517448,1.56816203 42.7040081,1.78082025 43.1495777,2.22250127 C43.6037347,2.66418228 43.8327575,3.20793924 43.8327575,3.84591392 L43.8327575,3.84591392 Z"></path>
-                                <path d="M65.2535575,32.8139342 C63.5604739,33.8526785 61.5401803,34.368 59.2048284,34.368 C56.0398258,34.368 53.4918157,33.3171038 51.5451625,31.218957 C49.6557043,29.1822987 48.7029954,26.5528709 48.7029954,23.3301873 C48.7029954,19.7146734 49.7375271,16.7867949 51.823198,14.5620253 C53.896798,12.333043 56.6859828,11.2206582 60.1948841,11.2206582 C62.1127777,11.2206582 63.8140435,11.596881 65.3026511,12.3412253 L65.3026511,15.9688911 C63.6546916,14.8113823 61.9125144,14.2387848 60.0433904,14.2387848 C57.7940739,14.2387848 55.9661853,15.0240405 54.5469246,16.5905013 C53.0703878,18.1936608 52.3221549,20.3366076 52.3221549,23.0112405 C52.3221549,25.5795038 53.0052537,27.6119494 54.3630258,29.1129519 C55.7247676,30.6055291 57.5366157,31.3540861 59.8225499,31.3540861 C61.7528385,31.3540861 63.5604739,30.72 65.2535575,29.4565266 L65.2535575,32.8139342 L65.2535575,32.8139342 Z"></path>
-                                <path d="M82.1152891,15.341043 C81.493679,14.8627443 80.5982461,14.6294278 79.4161904,14.6294278 C77.9808891,14.6294278 76.7742866,15.2716962 75.7970309,16.5678987 C74.6885347,18.0156759 74.1365954,20.0196051 74.1365954,22.5796861 L74.1365954,33.8343696 L70.6031473,33.8343696 L70.6031473,11.7585013 L74.1365954,11.7585013 L74.1365954,16.3104405 L74.2216587,16.3104405 C74.7411929,14.6990987 75.5428132,13.4597671 76.6142866,12.5806987 C77.6160891,11.7791595 78.7490511,11.3740962 79.996241,11.3740962 C80.936879,11.3740962 81.6363423,11.4755241 82.114641,11.6750582 L82.114641,15.3394228 L82.1152891,15.341043 Z"></path>
-                                <path d="M101.808737,22.8374684 C101.808737,20.0117468 101.170763,17.8524354 99.8948132,16.3719291 C98.6558056,14.9487797 96.9256992,14.2371646 94.697041,14.2371646 C92.5007068,14.2371646 90.7382765,14.956962 89.4210916,16.3964759 C88.0266208,17.9341772 87.3314511,20.1056405 87.3314511,22.9235848 C87.3314511,25.5654886 87.9939727,27.6387646 89.3314106,29.1191899 C90.6603423,30.6077975 92.4516132,31.3521418 94.697041,31.3521418 C97.019917,31.3521418 98.7987929,30.5957266 100.017466,29.0907544 C101.211674,27.6184304 101.808737,25.5366481 101.808737,22.8374684 M105.43219,22.7131949 C105.43219,26.2302785 104.43857,29.0564051 102.459107,31.1748051 C100.471623,33.3013873 97.7969904,34.3647595 94.4352891,34.3647595 C91.1226815,34.3647595 88.4846663,33.3013873 86.5504891,31.1748051 C84.6568182,29.1257519 83.7041094,26.4183899 83.7041094,23.0528 C83.7041094,19.2124759 84.7794714,16.2515443 86.9387828,14.1495089 C88.9345296,12.1988861 91.6049499,11.2173367 94.9506106,11.2173367 C98.24256,11.2173367 100.815117,12.2436861 102.667552,14.2764557 C104.503947,16.3212152 105.43219,19.1349468 105.43219,22.7131949"></path>
-                                <path d="M122.955714,27.9292759 C122.955714,29.7369114 122.281122,31.2337013 120.927319,32.4279089 C119.451107,33.7202228 117.422631,34.3663797 114.870732,34.3663797 C112.780768,34.3663797 110.948585,33.9289114 109.394519,33.0373671 L109.394519,29.2379544 C111.124626,30.6448203 113.034256,31.3524658 115.132403,31.3524658 C117.92977,31.3524658 119.332342,30.3219038 119.332342,28.268881 C119.332342,27.4057722 119.024818,26.6902684 118.40418,26.1380051 C117.782489,25.5736709 116.575887,24.8989975 114.780727,24.1095291 C112.93218,23.2998076 111.615319,22.4697519 110.838327,21.6067241 C109.905871,20.5842633 109.435431,19.2553316 109.435431,17.619443 C109.435431,15.7872608 110.167623,14.2617114 111.615319,13.0472506 C113.066985,11.8284962 114.931897,11.219038 117.222044,11.219038 C118.976697,11.219038 120.547127,11.5625316 121.941517,12.2538127 L121.941517,15.8118076 C120.485638,14.7606684 118.821314,14.2371646 116.931856,14.2371646 C115.762276,14.2371646 114.821638,14.5283241 114.122175,15.0959797 C113.414773,15.6766785 113.058803,16.4171342 113.058803,17.3207494 C113.058803,18.2983291 113.356525,19.059038 113.946459,19.6027949 C114.469882,20.1059646 115.582266,20.7193924 117.259066,21.4348962 C119.144231,22.2243646 120.506216,23.0423494 121.336271,23.8805063 C122.411957,24.9399089 122.955714,26.2894987 122.955714,27.9292759"></path>
-                                <path d="M144.550368,22.8374684 C144.550368,20.0117468 143.912393,17.8524354 142.632474,16.3719291 C141.397436,14.9487797 139.66336,14.2371646 137.438671,14.2371646 C135.242337,14.2371646 133.479826,14.956962 132.154783,16.3964759 C130.764363,17.9341772 130.073001,20.1056405 130.073001,22.9235848 C130.073001,25.5654886 130.735522,27.6387646 132.060565,29.1191899 C133.406266,30.6077975 135.197537,31.3521418 137.438671,31.3521418 C139.765436,31.3521418 141.540342,30.5957266 142.759097,29.0907544 C143.953223,27.6184304 144.550368,25.5366481 144.550368,22.8374684 M148.181922,22.7131949 C148.181922,26.2302785 147.180119,29.0564051 145.196525,31.1748051 C143.217142,33.3013873 140.542509,34.3647595 137.180808,34.3647595 C133.864312,34.3647595 131.226297,33.3013873 129.292038,31.1748051 C127.398449,29.1257519 126.445659,26.4183899 126.445659,23.0528 C126.445659,19.2124759 127.529284,16.2515443 129.676525,14.1495089 C131.672271,12.1988861 134.346904,11.2173367 137.69613,11.2173367 C140.988403,11.2173367 143.556747,12.2436861 145.405213,14.2764557 C147.245578,16.3212152 148.181922,19.1349468 148.181922,22.7131949"></path>
-                                <path d="M163.752312,4.25843038 C163.057061,3.87402532 162.284363,3.67773165 161.404889,3.67773165 C158.930519,3.67773165 157.703583,5.23568608 157.703583,8.35629367 L157.703583,11.7588253 L162.877132,11.7588253 L162.877132,14.7524861 L157.703583,14.7524861 L157.703583,33.8346937 L154.166246,33.8346937 L154.166246,14.7524861 L150.411957,14.7524861 L150.411957,11.7588253 L154.166246,11.7588253 L154.166246,8.18057722 C154.166246,5.75100759 154.910509,3.84526582 156.423745,2.47112911 C157.720271,1.27692152 159.306742,0.684070886 161.192231,0.684070886 C162.284363,0.684070886 163.134995,0.814987342 163.752312,1.06855696 L163.752312,4.25843038 L163.752312,4.25843038 Z"></path>
-                                <path d="M177.698641,33.612881 C176.864373,34.0915038 175.751988,34.3287089 174.377851,34.3287089 C170.525456,34.3287089 168.59938,32.1570025 168.59938,27.8137519 L168.59938,14.7557266 L164.812363,14.7557266 L164.812363,11.7578532 L168.59938,11.7578532 L168.59938,6.37196962 C169.72813,6.016 170.901679,5.62762532 172.141011,5.2268557 L172.141011,11.7578532 L177.698641,11.7578532 L177.698641,14.7557266 L172.141011,14.7557266 L172.141011,27.2128 C172.141011,28.6932253 172.383076,29.7523038 172.889244,30.3657316 C173.400595,30.9997367 174.234864,31.3105823 175.412707,31.3105823 C176.291856,31.3105823 177.052484,31.0749975 177.698641,30.5989671 L177.698641,33.612881 L177.698641,33.612881 Z"></path>
-                            </g>
-                            <g transform="translate(0.000000, 160.405063)" fill="#000000">
-                                <path d="M13.4143919,76.2476557 C13.4143919,77.977438 12.7970187,79.4742278 11.5495129,80.7381063 C10.3062603,81.9976911 8.79702684,82.6317772 7.02637367,82.6317772 C5.29629165,82.6317772 3.8240243,81.9976911 2.61774582,80.7381063 C1.41114329,79.4742278 0.810126582,77.977438 0.810126582,76.2476557 C0.810126582,74.4688608 1.41114329,72.9677772 2.61774582,71.724557 C3.8240243,70.477043 5.29629165,69.8596456 7.02637367,69.8596456 C8.79702684,69.8596456 10.3062603,70.4855494 11.5495129,71.7491038 C12.7970187,73.0129823 13.4143919,74.5136608 13.4143919,76.2476557"></path>
-                                <path d="M92.5311676,81.3316051 L81.0066309,81.3316051 L39.1738653,16.7277367 C38.1962775,15.1736709 37.3538187,13.484557 36.6382906,11.6402228 L36.2944324,11.6402228 C36.592162,13.3700051 36.7446197,17.0833823 36.7446197,22.7722532 L36.7446197,81.3316051 L27.2442329,81.3316051 L27.2442329,0.279250633 L39.5746511,0.279250633 L80.155998,63.8649519 C81.7715524,66.3880911 82.8754309,68.1956456 83.4358765,69.2835646 L83.6615777,69.2835646 C83.2853549,66.9524253 83.0893853,62.9772962 83.0893853,57.3663595 L83.0893853,0.279250633 L92.5322208,0.279250633 L92.5322208,81.3316051 L92.5311676,81.3316051 Z"></path>
-                                <path d="M153.436079,81.3316051 L110.478469,81.3316051 L110.478469,0.279250633 L151.571168,0.279250633 L151.571168,8.86748354 L119.970722,8.86748354 L119.970722,35.8302785 L149.252504,35.8302785 L149.252504,44.4228051 L119.970722,44.4228051 L119.970722,72.7394025 L153.436079,72.7394025 L153.436079,81.3316051 L153.436079,81.3316051 Z"></path>
-                                <path d="M218.594965,8.8684557 L195.247522,8.8684557 L195.247522,81.3329013 L185.75138,81.3329013 L185.75138,8.8684557 L162.358651,8.8684557 L162.358651,0.276334177 L218.594965,0.276334177 L218.594965,8.8684557 L218.594965,8.8684557 Z"></path>
-                            </g>
-                            <g transform="translate(0.810127, 0.000000)">
-                                <path d="M88.4994916,20.6885266 C97.6642916,48.7146127 101.136413,98.7106025 127.935806,98.7106025 L127.935806,98.7106025 C129.976514,98.7106025 132.037719,98.5109873 134.107107,98.1174278 L134.107107,98.1174278 C109.745142,92.4370633 106.857851,42.9849114 91.9920284,17.3755949 L91.9920284,17.3755949 C90.8264182,18.4349165 89.6690714,19.539119 88.4994916,20.6885266" fill="url(#linearGradient-1)"></path>
-                                <path d="M91.9920284,17.3755949 C106.857851,42.9849114 109.745142,92.4370633 134.107107,98.1174278 L134.107107,98.1174278 C136.021031,97.7657519 137.939087,97.2340658 139.861193,96.563362 L139.861193,96.563362 C117.993932,85.8485468 111.949416,37.8279696 95.0674309,14.7091443 L95.0674309,14.7091443 C94.0449701,15.5601013 93.0185397,16.4516456 91.9920284,17.3755949" fill="url(#linearGradient-2)"></path>
-                                <path d="M113.411208,2.14545823 C111.37455,2.14545823 109.309132,2.34499241 107.235856,2.73863291 C101.81295,3.76101266 96.3044132,6.09604051 90.7506714,9.62948861 C92.2677954,11.1262785 93.711279,12.8396962 95.0690511,14.7088203 C100.71693,10.0220759 106.327947,6.55829873 111.918631,4.47651646 C114.016454,3.69952405 116.106418,3.1148557 118.204241,2.73045063 C116.691087,2.34564051 115.096109,2.14545823 113.411208,2.14545823" fill="#14559A"></path>
-                                <path d="M156.93137,86.6867038 C159.168373,84.9079089 161.409507,82.9405975 163.654692,80.793762 C154.342611,52.8981873 151.009588,2.18669367 124.022003,2.18669367 C122.091714,2.18669367 120.145061,2.36662278 118.202459,2.72648101 C142.785264,8.84066835 145.934307,62.3249013 156.93137,86.6867038" fill="url(#linearGradient-3)"></path>
-                                <path d="M118.203269,2.72842532 C116.690114,2.34402025 115.095218,2.14383797 113.410236,2.14383797 L124.022894,2.18272405 C122.092525,2.18272405 120.145871,2.36265316 118.203269,2.72680506" fill="#3092C4"></path>
-                                <path d="M156.460038,92.6127797 C155.40493,91.6067646 154.403127,90.502562 153.417365,89.324719 C148.877821,92.5391392 144.354722,94.9765671 139.860383,96.563362 C141.459249,97.3446481 143.135968,97.9254278 144.915168,98.2852861 C146.293193,98.566643 147.720636,98.7106025 149.221395,98.7106025 C154.264028,98.7106025 158.251309,98.1135392 161.645659,96.4858329 C159.776859,95.4755241 158.063198,94.1668456 156.460038,92.6127797" fill="#1969BC"></path>
-                                <path d="M111.916687,4.48113418 C133.93536,15.9974886 135.849284,68.1485772 153.418337,89.324719 L153.418337,89.324719 C154.59618,88.4946633 155.761709,87.6152709 156.927238,86.6867038 L156.927238,86.6867038 C145.930256,62.3249013 142.785264,8.83637468 118.20659,2.72648101 L118.20659,2.72648101 C116.108606,3.11906835 114.014671,3.70017215 111.916687,4.48113418" fill="url(#linearGradient-4)"></path>
-                                <path d="M95.0674309,14.7091443 C111.949416,37.8279696 117.993932,85.8485468 139.861193,96.563362 L139.861193,96.563362 C144.355694,94.9765671 148.878874,92.5391392 153.418337,89.324719 L153.418337,89.324719 C135.849284,68.1485772 133.93536,15.9974886 111.916687,4.48113418 L111.916687,4.48113418 C106.326165,6.55862278 100.715228,10.0224 95.0674309,14.7091443" fill="url(#linearGradient-5)"></path>
-                                <path d="M77.698317,20.0135291 C75.0522815,25.996881 72.3490511,33.8610228 69.0814056,44.1260557 C75.5798359,34.9691949 82.0578511,27.0804253 88.4990056,20.6885266 C87.6115929,17.9605873 86.658722,15.4455494 85.6322106,13.2041722 C82.9984891,15.2204962 80.3442714,17.4903899 77.698317,20.0135291" fill="url(#linearGradient-6)"></path>
-                                <path d="M87.9785803,11.4790076 C87.2015068,12.0351595 86.4205448,12.6037873 85.6353701,13.2048203 C86.6617195,15.4459544 87.6104587,17.9612354 88.4981144,20.6888506 C89.6674511,19.5437367 90.8288486,18.4355646 91.9903271,17.376243 C90.7431372,15.2332152 89.4180942,13.2538329 87.9785803,11.4790076" fill="#2B74B1"></path>
-                                <path d="M90.7506714,9.62948861 C89.826398,10.214481 88.9064182,10.8317975 87.9779322,11.4779544 C89.4174461,13.2528608 90.7424891,15.232243 91.9939727,17.3794835 C93.0205651,16.4509975 94.0469144,15.5554835 95.0693752,14.7088203 C93.711603,12.8400203 92.2681195,11.1262785 90.7506714,9.62948861" fill="#125A9E"></path>
-                                <path d="M240.936717,0.0112607595 C228.483613,48.0357266 202.473527,86.6091747 180.667593,96.3343392 L180.626276,96.3343392 C180.229638,96.5142684 179.83697,96.6779139 179.448514,96.8371848 C179.395046,96.8695899 179.346438,96.8736405 179.305203,96.8930835 C179.190651,96.9392608 179.084363,96.9749063 178.969811,97.0206785 C178.916342,97.0530835 178.867735,97.0636152 178.818722,97.0830582 C178.634823,97.1486785 178.454732,97.2041722 178.274803,97.2761114 C178.197031,97.3085165 178.123633,97.3287696 178.049669,97.3546937 C177.967846,97.3870987 177.873628,97.4170734 177.779735,97.4430785 C177.697993,97.4754835 177.612282,97.4989772 177.517983,97.5346228 C177.440211,97.5670278 177.358388,97.5808 177.285071,97.6132051 C177.125395,97.6593823 176.978519,97.6982684 176.818844,97.753843 C176.753223,97.753843 176.692221,97.7894886 176.62255,97.8065013 C176.524363,97.8389063 176.41378,97.8624 176.307492,97.8915646 C176.23377,97.9239696 176.172687,97.9345013 176.094833,97.9507038 C175.984251,97.9831089 175.861517,98.0130835 175.751259,98.0390886 C175.604059,98.0714937 175.473223,98.1014684 175.334125,98.1307139 C176.319725,98.4947848 177.346236,98.6786835 178.45457,98.6786835 C199.131755,98.6786835 219.980363,61.6226835 254.476606,1.84741111e-13 L240.931775,1.84741111e-13 L240.936717,0.0112607595 Z" fill="url(#linearGradient-7)"></path>
-                                <path d="M64.5910359,4.09437975 C64.603998,4.09437975 64.6202005,4.06197468 64.6283018,4.06197468 C64.6445043,4.06197468 64.6696182,4.06197468 64.6777195,4.02956962 L64.7036435,4.02956962 C64.8181144,3.99068354 64.9244841,3.94450633 65.0389549,3.90197468 C65.0681195,3.90197468 65.0835119,3.90197468 65.1045752,3.86956962 C65.1337397,3.86956962 65.1620942,3.83716456 65.1906106,3.83311392 C65.3133448,3.79422785 65.435998,3.74805063 65.5505499,3.70551899 L65.5699929,3.70551899 C65.8441397,3.62377722 66.0975473,3.52234937 66.3633499,3.42748354 C66.4006157,3.42748354 66.4370714,3.39507848 66.4817904,3.39507848 C66.5923727,3.35943291 66.7069246,3.31973671 66.8212334,3.29365063 C66.8747018,3.26124557 66.927603,3.26124557 66.9766157,3.24423291 C67.0950562,3.20858734 67.2099322,3.16889114 67.3201904,3.14280506 C67.3696081,3.14280506 67.4144081,3.1104 67.4510258,3.10715949 C67.8313803,3.00249114 68.207603,2.9043038 68.5879575,2.81267848 C68.6414258,2.81267848 68.6861448,2.78027342 68.7433397,2.77703291 C68.853598,2.74462785 68.956079,2.72761519 69.0746005,2.71141266 C69.1240182,2.67900759 69.1809701,2.67900759 69.2382461,2.66199494 C69.3485043,2.62958987 69.4547929,2.62634937 69.5735575,2.59961519 L69.6513296,2.59961519 C69.8803524,2.55343797 70.1135068,2.5145519 70.3425296,2.47202025 L70.4815473,2.47202025 C70.5918056,2.43961519 70.6899929,2.43637468 70.8005752,2.41612152 C70.8613347,2.41612152 70.9232284,2.38371646 70.9805043,2.38371646 C71.0825803,2.38371646 71.1849803,2.35131139 71.2870562,2.33753924 C71.3405246,2.33753924 71.3933448,2.33753924 71.4549144,2.30513418 C71.6960081,2.27272911 71.9456081,2.25976709 72.1991777,2.23951392 C71.4835119,2.17065316 70.7473499,2.12496203 69.9989549,2.12496203 C46.7125792,2.12496203 14.6293792,45.3318481 0.176599494,101.286238 L2.96164456,101.286238 C7.58702177,93.0376101 11.7420962,85.2345519 15.5413711,77.9098734 C25.6632223,38.2773468 46.2790805,11.2487696 64.5924942,4.08797975" fill="url(#linearGradient-8)"></path>
-                                <path d="M77.69856,20.0135291 C80.3446765,17.4903899 82.9987322,15.2204962 85.6324537,13.2044962 C85.0314208,11.8876354 84.4098106,10.668881 83.7429954,9.55228354 C81.6124435,12.1369114 79.6657904,15.5477063 77.69856,20.0135291" fill="#0D82CA"></path>
-                                <path d="M79.6115119,4.42191392 C81.1328486,5.69786329 82.4945094,7.45243544 83.7420233,9.5545519 C84.1346106,9.07195949 84.5314916,8.62606582 84.9444132,8.20893165 C83.2146309,6.59362025 81.3455068,5.26857722 79.3170309,4.2707443 C79.3988537,4.31611139 79.4805954,4.35256709 79.5656587,4.38853671 C79.5656587,4.38853671 79.5980638,4.42094177 79.6118359,4.42094177" fill="#0D82CA"></path>
-                                <path d="M15.5403261,77.9146532 C36.7737195,36.9976709 46.8342278,11.1020557 64.591441,4.09243544 L64.591441,4.09243544 C46.2821266,11.257762 25.6621772,38.2860152 15.5403261,77.9146532" fill="url(#linearGradient-9)"></path>
-                                <path d="M84.9430359,8.20787848 C84.5301954,8.62930633 84.1376081,9.07098734 83.7407271,9.55357975 C84.4074613,10.6698532 85.0288284,11.884638 85.634398,13.2054684 C86.4195727,12.6044354 87.2005347,12.0358076 87.9776081,11.4796557 C87.016717,10.2936304 86.0024385,9.19364051 84.9430359,8.20787848" fill="#127BCA"></path>
-                                <path d="M25.179601,101.107119 L25.179601,101.107119 C25.0487332,101.139524 24.9178653,101.139524 24.7951716,101.153296 L24.7215311,101.153296 C24.6109489,101.153296 24.4964375,101.185701 24.3943615,101.185701 L24.3410552,101.185701 C24.0753904,101.218106 23.8134927,101.218106 23.5599311,101.238359 L23.4781408,101.238359 C44.9691868,100.637003 54.7924739,89.8769823 59.6673296,74.2709468 C63.3725246,62.4397772 66.415279,52.4731949 69.0817296,44.1100152 C60.0804132,56.7797468 51.0381853,71.8826127 41.9469448,88.8015392 C37.5628476,96.9562734 30.8967453,100.362775 25.1794309,101.091078" fill="url(#linearGradient-10)"></path>
-                                <path d="M25.179601,101.098937 L25.179601,101.098937 C30.8969154,100.370633 37.5630258,96.9681013 41.9471149,88.8093975 L41.9471149,88.8093975 C51.0383473,71.8946835 60.0846258,56.7876051 69.07776,44.1178734 L69.07776,44.1178734 C72.3494562,33.8486278 75.0486359,25.9886987 77.698722,20.0053468 L77.698722,20.0053468 C59.7738613,37.0673418 41.7794349,65.4373266 25.179601,101.090754" fill="url(#linearGradient-11)"></path>
-                                <path d="M15.5393134,77.9156253 C11.7402005,85.2403038 7.58513418,93.043362 2.95958684,101.29199 L11.0613225,101.29199 C12.1328122,93.1002329 13.654157,85.2890734 15.5393134,77.9195139" fill="#05A1E6"></path>
-                                <path d="M71.4538613,2.32603544 C71.388241,2.32603544 71.3393094,2.35844051 71.2821144,2.35844051 L71.2821144,2.35844051 C71.1839271,2.39084557 71.0815271,2.39084557 70.9794511,2.40137722 L70.9794511,2.40137722 C70.9186916,2.40137722 70.8610106,2.40137722 70.799522,2.43378228 L70.799522,2.43378228 C70.6889397,2.46618734 70.5868638,2.46942785 70.4804942,2.48968101 L70.4804942,2.48968101 C70.4310765,2.48968101 70.3823878,2.48968101 70.3414765,2.52208608 L70.3414765,2.52208608 C70.10816,2.56097215 69.8792992,2.60390886 69.6502765,2.64311899 L69.6502765,2.64311899 L69.5725043,2.64311899 L69.5725043,2.64311899 C69.4540638,2.67552405 69.3474511,2.69253671 69.2371929,2.70873924 L69.2371929,2.70873924 C69.1796739,2.7411443 69.122641,2.7411443 69.0693347,2.75410633 L69.0693347,2.75410633 C68.9590765,2.78651139 68.8484942,2.80028354 68.7422056,2.81972658 L68.7422056,2.81972658 C68.6846866,2.85213165 68.6401296,2.85213165 68.5867423,2.85537215 L68.5867423,2.85537215 C68.2064689,2.94699747 67.8301651,3.04518481 67.4498106,3.14985316 L67.4498106,3.14985316 C67.4093043,3.14985316 67.3680689,3.18225823 67.3189752,3.18873924 L67.3189752,3.18873924 C67.2045043,3.2211443 67.093922,3.25435949 66.9754815,3.29016709 L66.9754815,3.29016709 C66.9260638,3.32257215 66.8691119,3.32257215 66.8200182,3.33553418 L66.8200182,3.33553418 C66.7055473,3.36793924 66.5909954,3.40115443 66.4805752,3.43696203 L66.4805752,3.43696203 C66.4360182,3.43696203 66.3988334,3.46936709 66.357922,3.46936709 L66.357922,3.46936709 C66.0961701,3.56747342 65.8385499,3.66566076 65.5686157,3.74748354 L65.5686157,3.74748354 L65.5686157,3.74748354 L65.5686157,3.74748354 C65.4541448,3.78312911 65.3314106,3.82922532 65.2087575,3.87175696 L65.2087575,3.87175696 C65.1593397,3.90416203 65.1145397,3.91145316 65.0575878,3.93413671 L65.0575878,3.93413671 C64.9430359,3.96978228 64.8285651,4.01595949 64.7221954,4.05849114 L64.7221954,4.05849114 C64.6816891,4.0908962 64.6404537,4.09413671 64.6119372,4.11114937 L64.6119372,4.11114937 C46.8547646,11.1207696 36.7942562,37.0163848 15.5608628,77.9333671 L15.5608628,77.9333671 C13.6755362,85.3029266 12.1501003,93.1140861 11.0827099,101.305519 L11.0827099,101.305519 L12.2196253,101.305519 C15.4218127,101.305519 16.3256223,101.273114 20.0103858,101.273114 L20.0103858,101.273114 L20.1985053,101.273114 L20.7465154,101.273114 L20.934643,101.273114 L20.9879494,101.273114 L21.1760689,101.273114 L21.282398,101.273114 L21.3560385,101.273114 L21.5032628,101.273114 L21.9613084,101.273114 L22.4193458,101.273114 L22.8037671,101.273114 L22.9058511,101.273114 L23.580638,101.273114 L23.580638,101.273114 C23.8341914,101.240709 24.0959352,101.240709 24.361762,101.220456 L24.361762,101.220456 L24.4108557,101.220456 L24.4108557,101.220456 C24.521438,101.220456 24.6316962,101.188051 24.7380253,101.188051 L24.7380253,101.188051 L24.8155544,101.188051 L24.8155544,101.188051 C24.9339868,101.188051 25.0691078,101.155646 25.1999757,101.141873 L25.1999757,101.141873 C41.7998177,65.4884456 59.7941954,37.1184608 77.7190562,20.0564658 L77.7190562,20.0564658 C79.6902562,15.590643 81.6328587,12.1798481 83.759522,9.59943291 L83.759522,9.59943291 C82.5162208,7.49739747 81.154398,5.7388557 79.6330613,4.46258228 L79.6330613,4.46258228 C79.6330613,4.46258228 79.5917448,4.46258228 79.5885043,4.43017722 L79.5885043,4.43017722 C79.5024689,4.39453165 79.4210511,4.35159494 79.3350157,4.3091443 L79.3350157,4.3091443 C79.2488992,4.26296709 79.1753397,4.22732152 79.0856587,4.18154937 L79.0856587,4.18154937 C79.0078866,4.1491443 78.9178815,4.10620759 78.8402714,4.06375696 L78.8402714,4.06375696 C78.7339828,4.0313519 78.6479473,3.98517468 78.5540537,3.94264304 L78.5540537,3.94264304 C78.4762815,3.91023797 78.4067727,3.87702278 78.3289195,3.84453671 L78.3289195,3.84453671 C78.1692435,3.78215696 78.0099727,3.71694177 77.858641,3.64824304 L77.858641,3.64824304 C77.7889701,3.61583797 77.7238359,3.59882532 77.6580537,3.57290127 L77.6580537,3.57290127 C77.5477954,3.53320506 77.4208486,3.48127595 77.3063777,3.43218228 L77.3063777,3.43218228 C77.2488587,3.39977722 77.1836435,3.3932962 77.1182663,3.36980253 L77.1182663,3.36980253 C76.9507322,3.3139038 76.7870056,3.25533165 76.6315423,3.20291646 L76.6315423,3.20291646 L76.5910359,3.20291646 L76.5910359,3.20291646 C76.4028435,3.14053671 76.2188638,3.09500759 76.0266208,3.04259241 L76.0266208,3.04259241 C75.9820638,3.01018734 75.944798,3.01018734 75.899998,3.00370633 L75.899998,3.00370633 C75.7321397,2.95752911 75.5849397,2.91208101 75.4255878,2.86954937 L75.4255878,2.86954937 C75.3850815,2.86954937 75.3478157,2.8371443 75.3153296,2.8371443 L75.3153296,2.8371443 C74.9309246,2.73571646 74.5342056,2.65397468 74.1334359,2.57871392 L74.1334359,2.57871392 C74.0921195,2.57871392 74.0516942,2.54630886 74.0107828,2.54630886 L74.0107828,2.54630886 C73.8390359,2.5139038 73.6713397,2.48392911 73.4995929,2.46448608 L73.4995929,2.46448608 C73.4582765,2.43208101 73.4339727,2.43208101 73.397517,2.43208101 L73.397517,2.43208101 C73.193041,2.39967595 72.9926157,2.37618228 72.7921904,2.35349873 L72.7921904,2.35349873 L72.6859018,2.35349873 L72.6859018,2.35349873 C72.5223372,2.32109367 72.3711676,2.31785316 72.2196739,2.30084051 L72.2196739,2.30084051 C71.9618916,2.33324557 71.7166663,2.34701772 71.4753296,2.36970127" fill="url(#linearGradient-12)"></path>
-                                <path d="M192.294449,26.5978329 C188.208899,39.6846987 184.900342,50.4813367 182.021314,59.3640506 L182.021314,59.3640506 C193.230955,43.9379443 204.27298,24.5324152 214.787613,2.13792405 L214.787613,2.13792405 C202.522621,5.98999494 195.979228,14.8075747 192.294449,26.5978329" fill="url(#linearGradient-13)"></path>
-                                <path d="M182.377041,95.5164354 C181.804525,95.8075949 181.232008,96.0847392 180.667593,96.3343392 C202.473527,86.6091747 228.483613,48.0357266 240.936717,0.0112607595 L238.413254,0.0112607595 C209.802175,51.1193114 200.600514,85.3332253 182.377041,95.5164354" fill="url(#linearGradient-14)"></path>
-                                <path d="M168.138094,91.2226025 C172.882033,85.4317367 176.74658,75.5881316 182.02253,59.3643747 C175.936859,67.7235848 169.810925,74.9092456 163.680373,80.7695392 C163.680373,80.8019443 163.680373,80.8019443 163.647968,80.8221975 C164.985487,84.8300557 166.453436,88.3673924 168.126266,91.2219544" fill="#079AE1"></path>
-                                <path d="M168.138094,91.2226025 C166.52254,93.1938835 164.813335,94.6948861 162.911482,95.8072709 C162.494347,96.0494177 162.073325,96.2774684 161.643714,96.486157 C163.651937,97.5697823 165.843654,98.2937924 168.297365,98.5839797 L168.297365,98.5839797 C168.65698,98.6196253 169.01295,98.6528405 169.385284,98.6788456 L169.450904,98.6788456 C169.61779,98.6788456 169.794479,98.6788456 169.974408,98.7112506 L170.046509,98.7112506 L170.582408,98.7112506 L171.159218,98.7112506 L171.339228,98.7112506 L171.74818,98.7112506 C171.813801,98.7112506 171.882256,98.7112506 171.947714,98.6788456 C172.075309,98.6788456 172.209466,98.6788456 172.340302,98.6464405 L172.386479,98.6464405 L172.533679,98.6464405 C172.667836,98.6464405 172.815036,98.6140354 172.958995,98.6002633 L172.991401,98.6002633 C173.034337,98.6002633 173.079704,98.5678582 173.122236,98.5678582 C173.272757,98.5354532 173.429841,98.521681 173.576393,98.4989975 L173.71055,98.4989975 C173.877355,98.4665924 174.049831,98.4463392 174.221578,98.4139342 L174.253983,98.4139342 L174.303401,98.4139342 C174.646975,98.3483139 174.982287,98.2830987 175.321568,98.1980354 C172.507917,97.1673924 170.152312,94.7381468 168.123836,91.2783392" fill="#1969BC"></path>
-                                <path d="M127.936292,98.7112506 C129.977163,98.7112506 132.038368,98.5117165 134.107674,98.1141873 C136.021679,97.7667241 137.939573,97.2347139 139.861679,96.5640101 C141.460869,97.3452962 143.137588,97.9260759 144.912494,98.2859342 C146.290601,98.5672911 147.721932,98.7112506 149.223016,98.7112506 L127.936292,98.7112506 L127.936292,98.7112506 Z" fill="#1E5CB3"></path>
-                                <path d="M149.22334,98.7112506 C154.26176,98.7112506 158.253254,98.1141873 161.643714,96.486481 C163.651613,97.5701063 165.843654,98.2941165 168.297365,98.5846278 L168.297365,98.5846278 C168.657304,98.6202734 169.013274,98.6534886 169.385284,98.6794937 L169.450904,98.6794937 C169.61779,98.6794937 169.794479,98.6794937 169.974408,98.7118987 L170.04975,98.7118987 L170.585649,98.7118987 L149.208919,98.7118987 L149.22334,98.7112506 Z" fill="#1E5CB3"></path>
-                                <path d="M170.598368,98.7112506 L171.179147,98.7112506 L171.359076,98.7112506 L171.76414,98.7112506 C171.833001,98.7112506 171.898216,98.7112506 171.963674,98.6788456 C172.091269,98.6788456 172.225426,98.6788456 172.360555,98.6464405 L172.403492,98.6464405 L172.554013,98.6464405 C172.688089,98.6464405 172.83537,98.6140354 172.97536,98.6010734 L173.011006,98.6010734 C173.053942,98.6010734 173.096069,98.5686684 173.138601,98.5686684 C173.289122,98.5362633 173.446206,98.5233013 173.592433,98.4998076 C173.641851,98.4998076 173.680737,98.4998076 173.733071,98.4674025 C173.899957,98.4349975 174.072676,98.4179848 174.244504,98.3856608 L174.276909,98.3856608 L174.326327,98.3856608 C174.669902,98.3200405 175.005213,98.2547443 175.344494,98.169681 L175.344494,98.169681 C176.329932,98.5335089 177.356606,98.7177316 178.464697,98.7177316 L170.604444,98.7501367 L170.598368,98.7112506 Z" fill="#1D60B5"></path>
-                                <path d="M163.661092,80.8228456 L163.661092,80.7904405 C161.415988,82.937357 159.174854,84.9046684 156.937689,86.6834633 C155.768028,87.6119494 154.602661,88.4910987 153.424899,89.3214785 C154.410337,90.4992405 155.412464,91.603443 156.467573,92.6095392 C158.070732,94.163281 159.784069,95.4722835 161.653193,96.4822684 C162.078509,96.2728506 162.503826,96.0444759 162.916747,95.8033823 C164.822489,94.6909975 166.532018,93.190238 168.147573,91.219038 C166.474742,88.3644759 165.006712,84.8267342 163.669274,80.818957" fill="#175FAB"></path>
-                                <path d="M230.422165,0.0112607595 L219.813638,0.0112607595 L218.758449,0.0112607595 L218.758449,0.0112607595 L217.760616,0.0112607595 L217.760616,0.0112607595 L217.72173,0.0112607595 C217.034661,0.0436658228 216.368251,0.0671594937 215.709618,0.109448101 L215.709618,0.109448101 C215.398854,0.776263291 215.079826,1.44299747 214.77295,2.11370127 L214.77295,2.11370127 C204.258641,24.5081924 193.216616,43.9137215 182.006975,59.3398278 L182.006975,59.3398278 C176.735401,75.5632608 172.866641,85.4071899 168.122621,91.1981367 L168.122621,91.1981367 C170.151097,94.6579443 172.510833,97.0910785 175.316302,98.1217215 L175.316302,98.1217215 C175.398125,98.0893165 175.463502,98.0893165 175.537142,98.0723038 L175.537142,98.0723038 L175.582509,98.0723038 L175.582509,98.0723038 C175.631927,98.0723038 175.684585,98.0398987 175.737973,98.0398987 L175.737973,98.0398987 C175.852444,98.0074937 175.975178,97.9872405 176.089649,97.9515949 L176.089649,97.9515949 C176.16337,97.9191899 176.224454,97.9159494 176.298418,97.8924557 L176.298418,97.8924557 C176.404707,97.8600506 176.514965,97.836557 176.613152,97.8106329 L176.613152,97.8106329 C176.678773,97.7782278 176.743988,97.7676962 176.809446,97.7547342 L176.809446,97.7547342 C176.973011,97.7020759 177.120211,97.6631089 177.275674,97.6140152 L177.275674,97.6140152 C177.349395,97.5816101 177.427168,97.5548759 177.508909,97.5354329 L177.508909,97.5354329 C177.598914,97.5030278 177.688838,97.4795342 177.770661,97.4405671 L177.770661,97.4405671 C177.864879,97.408162 177.958773,97.3911494 178.040595,97.3555038 L178.040595,97.3555038 C178.114317,97.3230987 178.191765,97.3028456 178.261436,97.273681 L178.261436,97.273681 C178.445254,97.2080608 178.625426,97.1526481 178.809406,97.0806278 L178.809406,97.0806278 C178.858823,97.0806278 178.907593,97.0352608 178.960899,97.0247291 L178.960899,97.0247291 C179.071157,96.9785519 179.185709,96.9429063 179.296292,96.8938127 L179.296292,96.8938127 C179.336798,96.8614076 179.386216,96.8581671 179.439198,96.8411544 L179.439198,96.8411544 C179.823684,96.6808304 180.220322,96.5172658 180.617041,96.3383089 L180.617041,96.3383089 L180.658357,96.3383089 L180.658357,96.3383089 C181.222692,96.089681 181.795289,95.8105924 182.363755,95.5204051 L182.363755,95.5204051 C200.591279,85.3371949 209.793102,51.123281 238.40418,0.0152303797 L238.40418,0.0152303797 L230.413011,0.0152303797 L230.422165,0.0112607595 Z" fill="url(#linearGradient-15)"></path>
-                                <path d="M72.1990157,2.25701266 C72.2443828,2.25701266 72.2850511,2.25701266 72.3298511,2.28941772 C72.4401094,2.28941772 72.5506916,2.28941772 72.6611119,2.32506329 L72.7716942,2.32506329 C72.9719575,2.35746835 73.1724638,2.37448101 73.3769397,2.40364557 C73.4142056,2.40364557 73.4466106,2.40364557 73.4790157,2.43605063 C73.6465499,2.4684557 73.8184587,2.49518987 73.9902056,2.52111392 C74.0274714,2.52111392 74.076322,2.55351899 74.1171524,2.55351899 C74.5098208,2.63210127 74.9105904,2.71384304 75.2949954,2.81527089 C75.3314511,2.81527089 75.368717,2.84767595 75.4013651,2.84767595 C75.5649296,2.88656203 75.7121296,2.93597975 75.8756942,2.9817519 C75.9251119,2.9817519 75.9614056,3.01415696 76.0066106,3.0214481 C76.1989347,3.07086582 76.3787828,3.11963544 76.5668942,3.18177215 C76.5749954,3.18177215 76.5863372,3.18177215 76.6082106,3.21417722 C76.7674815,3.26278481 76.9311271,3.32540759 77.0989043,3.38098228 C77.1645246,3.41338734 77.2255271,3.42715949 77.2870157,3.44336203 C77.4015676,3.49277975 77.5285144,3.54146835 77.6387727,3.58732152 C77.7043929,3.58732152 77.7696081,3.63268861 77.8389549,3.65618228 C77.9901246,3.72504304 78.1498005,3.78701772 78.3051828,3.85247595 C78.3870056,3.88488101 78.4563524,3.92133671 78.5342056,3.95058228 C78.6242106,3.99675949 78.7181043,4.03896709 78.8162916,4.0716962 C78.8980334,4.11058228 78.9880385,4.15343797 79.0655676,4.18940759 C79.151603,4.23558481 79.2331018,4.27123038 79.3151676,4.31700253 C81.3436435,5.31491646 83.2126056,6.64417215 84.9425499,8.25551392 C85.5805246,7.58481013 86.2470967,6.98345316 86.9382967,6.44366582 C83.1553296,3.76085063 78.8694359,2.23133165 73.9250714,2.23133165 C73.3524739,2.23133165 72.7799575,2.26373671 72.1992587,2.30667342" fill="#7DCBEC"></path>
-                                <path d="M84.943117,8.20787848 C86.0023575,9.19331646 87.0165549,10.2936304 87.9776081,11.4796557 C88.9059322,10.8334987 89.8261549,10.2118076 90.7504284,9.63110886 C89.5398562,8.42053671 88.2639068,7.33269873 86.9347322,6.39603038 C86.2436132,6.93192911 85.5810916,7.53717468 84.943117,8.20787848" fill="#5EC5ED"></path>
-                                <path d="M72.1980425,6.28463137 C72.778771,6.33370702 73.3513202,6.3541552 73.9238694,6.3541552 C78.8682407,6.3541552 83.1541803,4.82463093 86.9370947,2.14591862 C90.9285805,5.29493919 95.7543523,6.39505157 102.457267,6.39505157 L69.9978178,6.39505157 C70.7462214,6.39505157 71.4782664,6.35006557 72.1980425,6.28463137" fill="url(#linearGradient-16)" transform="translate(86.227543, 4.270485) scale(1, -1) translate(-86.227543, -4.270485) "></path>
-                                <path d="M102.457267,9.62995452 C95.7543523,9.62995452 90.9285805,8.52984214 86.9370947,5.38082157 C88.2621371,4.44429467 89.5381039,3.35645121 90.7486364,2.14591862 C96.3064533,5.67936508 101.811105,8.0186375 107.238053,9.04104678 C109.30741,9.4295623 111.372676,9.62995452 113.409316,9.62995452 L102.457267,9.62995452 L102.457267,9.62995452 Z" fill="url(#linearGradient-17)" transform="translate(100.173205, 5.887937) scale(1, -1) translate(-100.173205, -5.887937) "></path>
-                                <path d="M182.021314,59.3722329 C184.904474,50.4813367 188.204768,39.6889924 192.298499,26.5978329 C195.987411,14.803362 202.51857,5.98610633 214.783319,2.13792405 C215.107289,1.47929114 215.413193,0.800405063 215.728251,0.133670886 C195.733841,1.33209114 186.389031,11.5028253 181.685922,26.5651848 C173.461679,52.8614886 168.480454,69.907119 163.68337,80.7692152 C169.809628,74.9128101 175.935887,67.7232608 182.021314,59.3722329" fill="url(#linearGradient-18)"></path>
-                                <path d="M211.354621,91.7061671 L209.08894,91.7061671 L209.08894,98.7485165 L208.164666,98.7485165 L208.164666,91.7061671 L205.890884,91.7061671 L205.890884,90.8680101 L211.354621,90.8680101 L211.354621,91.7061671 L211.354621,91.7061671 Z" fill="#000000"></path>
-                                <path d="M220.631866,98.7472203 L219.711887,98.7472203 L219.711887,93.4552304 C219.711887,93.0380962 219.744292,92.5270684 219.787228,91.9257114 L219.787228,91.9257114 C219.692282,92.2856506 219.61378,92.5352506 219.541841,92.6946025 L216.859026,98.7472203 L216.409163,98.7472203 L213.718165,92.7397266 C213.639583,92.5728405 213.561163,92.3020152 213.476099,91.9257114 L213.443694,91.9257114 C213.476099,92.243119 213.486631,92.7560911 213.486631,93.4677063 L213.486631,98.7472203 L212.603269,98.7472203 L212.603269,90.8667139 L213.821942,90.8667139 L216.238793,96.3670684 C216.421963,96.7803139 216.536514,97.0992608 216.594763,97.311919 L216.630408,97.311919 C216.790732,96.8784203 216.921568,96.5551797 217.010925,96.3425215 L219.476788,90.8667139 L220.638266,90.8667139 L220.638266,98.7472203 L220.631866,98.7472203 Z" fill="#000000"></path>
-                            </g>
-                        </g>
-                    </svg>
-                    
-                    <p class="asp-net">NET</p>
-                </div> -->
-
-                <div class="skills-lenguajes-items" data-aos="zoom-in">
-                    <img src="img/aspnet-mvc.png" alt="">
-                    <p class="asp-net">.NET</p>
-                </div>
-
-                <div class="skills-lenguajes-items" data-aos="zoom-in">
-                    <svg viewBox="65.1 102.4 367.4 295.19999999999993" xmlns="http://www.w3.org/2000/svg" width="100px" height="100px"><linearGradient id="a" gradientTransform="scale(115.9464 -115.9464) rotate(30.578 8.401 .224)" gradientUnits="userSpaceOnUse" x1="1.511" x2="1.657" y1="1.192" y2="1.192"><stop offset="0" stop-color="#909ca9"/><stop offset="1" stop-color="#ededee"/></linearGradient><linearGradient id="b" gradientTransform="matrix(80.3196 0 0 -80.3196 150.725 -619.331)" gradientUnits="userSpaceOnUse" x1=".981" x2="1.127" y1="-9.224" y2="-9.224"><stop offset="0" stop-color="#939fab"/><stop offset="1" stop-color="#dcdee1"/></linearGradient><radialGradient id="c" cx="1.935" cy="2.23" gradientTransform="matrix(-102.4055 -15.3824 -31.1105 204.8109 556.169 -251.717)" gradientUnits="userSpaceOnUse" r=".146"><stop offset="0" stop-color="#ee352c"/><stop offset="1" stop-color="#a91d22"/></radialGradient><path d="M315 196.4l-40.3 13.2-35.1 15.5-9.8 2.6c-2.5 2.4-5.1 4.8-8 7.2-3.1 2.7-6 5.1-8.2 6.9-2.5 2-6.1 5.6-8 7.9-2.8 3.5-5 7.2-5.9 10-1.7 5.1-.9 10.3 2.4 15.1 4.1 6.1 12.4 12.3 22 16.5 4.9 2.2 13.2 4.9 19.4 6.5 10.3 2.6 30.3 5.5 41.3 5.9 2.2.1 5.2.1 5.3 0 .2-.2 2-3.4 3.9-7.5 6.8-13.8 11.6-26.8 14.3-37.8 1.6-6.7 2.8-15.6 3.7-26.2.2-3 .3-12.9.1-16.2-.3-5.5-.8-9.9-1.5-14.3-.1-.6-.2-1.2-.1-1.2.1-.1.5-.2 5.5-1.6zm-9.2 5.4c.4 0 1.3 9.4 1.6 15.3.1 1.2 0 2.1 0 2.1-.2 0-5.1-2.9-8.7-5.1-3-1.9-8.8-5.8-9.7-6.5-.3-.2-.3-.2 2.2-1.1 4.2-1.5 14.2-4.7 14.6-4.7zm-20.6 6.8c.3 0 1 .4 2.7 1.4 6.3 3.9 14.8 8.7 18.5 10.3 1.1.5 1.2.3-1.3 2.1-5.5 3.8-12.5 7.5-20.9 11.2-1.5.7-2.7 1.2-2.8 1.2s.1-.8.4-1.7c2-7.6 3.2-15.3 3.3-21.4-.2-3.1-.2-3.1.1-3.1zm-4.2 1.6c.2.2.1 7-.2 8.9-.5 4.4-1.4 8.6-2.8 13.3-.3 1.1-.6 2.1-.7 2.1-.1.2-4.3-3.9-5.7-5.5-2.4-2.7-4.2-5.5-5.6-8.2-.7-1.4-1.8-4.1-1.7-4.1.5-.4 16.6-6.6 16.7-6.5zm-19.9 7.8c.2.1.4.6.5 1.1 1 2.7 3.2 6.6 5.1 9 2.1 2.7 4.8 5.7 7 7.6.7.6 1.4 1.2 1.5 1.3.2.2.2.2-4.7 2-5.8 2.2-12 4.4-19.2 6.7-1.7.6-3.4 1.1-5.1 1.7-.3.1-.2-.1.6-1.3 3.6-5.6 9-16.5 12-24.3.5-1.3 1-2.7 1.1-3 .1-.4.3-.6.7-.8.2.1.4 0 .5 0zm-6.1 2.5c.1.1-1.5 3.3-3 6.3-3 5.8-6.2 11.4-10.5 18.3-.7 1.2-1.4 2.3-1.5 2.4-.2.2-.2.2-.7-.8-1-2-1.9-4.7-2.3-7.1-.5-2.4-.4-6.5.2-9.1.4-1.9.4-1.9 1.3-2.3 3.7-1.9 16.3-7.8 16.5-7.7zm52.5 2.2v1.3c0 6.8-.7 16.1-1.8 22.9-.2 1.2-.3 2.2-.4 2.2 0 0-.9-.2-1.9-.5-4.6-1.4-9.5-3.5-14-6-3-1.6-7.3-4.3-7.1-4.4 0 0 1.3-.7 2.8-1.5 6-3.1 11.7-6.5 16.7-9.8 1.9-1.2 4.7-3.3 5.3-3.8zm-75.5 9c.1 0 .1.2-.1 1.3-.1.8-.3 2.3-.3 3.3-.2 4.4.5 7.7 2.7 12.2.6 1.2 1.1 2.3 1.1 2.3-.2.2-20.4 6.1-26.7 7.8-1.9.5-3.5 1-3.7 1-.2.1-.2 0-.2-.5.7-4.5 4.1-10.3 8.9-15.3 3.2-3.3 5.7-5.2 10-7.7 3.1-1.6 7.8-4.3 8.3-4.4-.1 0-.1 0 0 0zm47.5 8.5s.8.4 1.6.9c6.5 3.8 15.6 7.3 23.3 9.1l.7.2-1 .5c-4.1 2.3-17.4 7.8-31 12.9-2 .7-3.9 1.5-4.3 1.6-.4.2-.7.2-.7.2s.5-1.1 1.2-2.4c3.8-7.1 7.6-15.8 9.6-21.8.4-.7.6-1.2.6-1.2zm-4.8 1.6s-.2.7-.5 1.4c-2.7 6.4-6.1 13.4-10.6 21.3-1.1 2-2.1 3.6-2.1 3.6s-.9-.5-2-1.2c-6.5-4-12.2-8.8-15.9-13.6l-.5-.7 2.8-.8c9.9-2.7 18.4-5.6 26.8-9.2.9-.4 1.9-.8 2-.8zm30.1 10.5c0 .7-1.5 7-2.8 11.5-1.1 3.8-2 6.8-3.7 12.1-.7 2.3-1.4 4.2-1.4 4.2s-.2 0-.4-.1c-9-1.6-17.2-3.9-24.8-7-2.1-.9-5.2-2.2-5.4-2.4-.1-.1 1.8-.9 4.1-1.9 13.9-6.1 28.2-12.9 33.2-15.9.6-.3 1.1-.5 1.2-.5zm-69.5 2.4c.1.1-3.8 5.6-9.2 13.2-1.9 2.7-4.1 5.8-4.9 6.9-.8 1.2-2.1 3-2.8 4.1l-1.3 2-1.4-1.2c-1.6-1.3-4.4-4.2-5.7-5.8-2.6-3.3-4.4-6.7-5.1-9.8-.3-1.5-.3-2.2 0-2.3.5-.1 8.6-2 16.2-3.8 4.2-1 9.1-2.1 10.9-2.6 1.8-.4 3.2-.7 3.3-.7zm3.9 1.5l1 1.1c4.4 4.9 8.9 8.5 14.3 11.7 1 .5 1.7 1 1.6 1.1-.2.2-18.8 6.8-27.5 9.7-4.8 1.7-8.8 3.1-8.9 3.1l-.6-.4-.5-.4.9-1.3c2.9-4.1 6.5-8.7 14.3-18.1zm24.3 17.4s1.4.5 3 1.1c4 1.5 7.1 2.4 11.3 3.5 5.2 1.3 12.7 2.6 17.1 3 .7.1 1 .1.9.2-.2.1-4.7 1.6-8 2.7-5.2 1.6-21.2 6.4-34.3 10.1-2.4.7-4.5 1.3-4.6 1.3-.3.1-1.3-.2-1.3-.3s.7-1 1.6-2c4.4-5.2 8.7-11.1 12.4-16.6 1-1.8 1.9-3 1.9-3zm-5.4.1s-2.1 3.5-5.9 9.5c-1.6 2.5-3.4 5.4-4.1 6.4-.6 1-1.5 2.5-2 3.4l-.9 1.6-.5-.1c-1.1-.3-8.8-3-10.8-3.8-2.5-1-5.1-2.2-7.1-3.3-2.4-1.3-5.5-3.3-5.2-3.3.1 0 4.2-1.2 9.3-2.5 13.3-3.6 20.7-5.7 25.6-7.3.8-.4 1.6-.6 1.6-.6zm37.9 8.9c.2.3-4.8 14-6.6 18.3-.4 1-.5 1.2-.8 1.2-.5 0-7.7-1-12-1.7-7.6-1.2-20.3-3.4-23.5-4.1l-.7-.2 4.5-1c9.8-2.2 14.4-3.4 19.2-4.8 6-1.8 11.9-4.1 17.9-6.9 1-.4 1.8-.8 2-.8z" fill="url(#a)"/><path d="M273.4 102.5c-.7-.1-11.5 3.8-18.5 6.6-9.4 3.8-16.7 7.5-21.2 10.7-1.7 1.2-3.8 3.3-4.1 4.1-.1.3-.2.7-.2 1l4.1 3.9 9.7 3.1 23.1 4.1 26.4 4.5.3-2.3h-.2l-3.5-.5-.7-1.2c-3.6-6.3-7.6-14.2-9.9-19.5-1.8-4.1-3.5-8.9-4.4-12.3-.5-2.1-.6-2.2-.9-2.2zm-.5 1.5c.1 0 .2.9.3 1.9.5 4.3 1.5 8.4 3 12.8 1.1 3.4 1.1 3.2-.2 2.8-3.1-.9-17-3.3-27.1-4.7-1.6-.2-3-.4-3-.5-.1-.1 7.3-4 10.5-5.5 4.2-1.9 15.7-6.6 16.5-6.8zm-29.4 13.7l1.2.4c6.5 2.2 22.7 5.3 31.7 6 1 .1 1.9.2 1.9.2s-.8.5-1.9 1c-4.3 2.2-9.1 4.8-12.4 6.9-1 .6-1.9 1.1-2 1.1s-.8-.1-1.4-.2l-1.2-.2-3-3c-5.4-5.2-9.6-9.2-11.2-10.8zm-1.2.9l4.3 5.4c2.3 3 4.7 5.8 5.2 6.5.5.6.9 1.2.9 1.2-.1.1-6.2-1.1-9.4-1.8-3.3-.8-4.7-1.1-6.7-1.8l-1.7-.5v-.4c0-2 2.6-5.1 7-8.2zm36.5 7.3c.1 0 .3.3.6 1.1 1 2.3 4.3 8.4 5.1 9.6.2.4.7.4-3.6-.3-10.3-1.7-13.6-2.2-13.6-2.3 0 0 .3-.2.7-.5 3.2-1.8 6.4-4 9.3-6.4.7-.6 1.3-1.1 1.5-1.2-.1 0 0 0 0 0z" fill="url(#b)"/><path d="M229.8 123.4s-.7 1.1 0 2.7c.4 1 1.6 2.2 2.9 3.4 0 0 13.6 13.2 15.2 15.1 7.5 8.7 10.8 17.2 11.1 28.9.2 7.6-1.2 14.2-4.8 21.9-6.3 13.8-19.7 29.1-40.3 46l3-1c1.9-1.5 4.6-3 10.8-6.4 14.4-7.9 30.5-15.1 50.3-22.5 28.5-10.7 75.4-23.3 102.1-27.4l2.8-.4-.4-.7c-2.4-3.8-4.1-6.1-6.1-8.6-5.8-7.3-12.9-13.1-21.6-18-11.9-6.7-27.4-11.9-47-15.8-3.7-.7-11.8-2.1-18.4-3.1-14-2.2-23-3.7-32.9-5.4-3.6-.6-8.9-1.5-12.4-2.3-1.8-.4-5.3-1.2-8.1-2.2-2.4-.7-5.5-1.6-6.2-4.2zm7.9 7.7s.5.2 1.2.4c1.2.4 2.7.9 4.4 1.3 1.3.4 2.7.7 4 1.1 1.8.5 3.4.9 3.4.9.2.2 3.3 10.1 4.3 13.8.4 1.4.7 2.7.7 2.7s-.4-.5-.8-1.2c-3.6-6.3-9.2-12.6-15.7-17.8-.9-.7-1.5-1.2-1.5-1.2zm15 4.1c.2 0 .8.1 1.6.3 5.2 1.2 14.5 2.9 20.4 3.9 1 .2 1.8.3 1.8.4s-.4.3-.8.5c-1 .5-5.1 2.9-6.4 3.8-3.4 2.3-6.4 4.7-8.6 6.9l-1.6 1.6s-.2-.5-.3-1.2c-1.1-4.2-3.4-10.5-5.5-14.9-.4-.6-.7-1.3-.6-1.3-.1 0-.1 0 0 0zm26.3 5c.2.1.5 1.1 1.1 3.4 1.1 4.4 1.6 9.4 1.5 14-.1 1.3-.1 2.5-.2 2.6l-.1.3-1.6-.5c-3.3-1-8.6-2.6-13.1-3.9-2.6-.7-4.7-1.3-4.7-1.4 0-.2 3.8-4 5.4-5.4 3.1-2.7 11.5-9.2 11.7-9.1zm2.1.3c.1-.1 12.6 2.1 18.3 3.2 4.2.8 10.4 2.1 10.8 2.3.2.1-.5.4-2.5 1.3-8 3.6-14 6.9-20 10.8-1.6 1-2.9 1.9-2.9 1.9s-.1-.9-.1-1.9c0-5.8-1.2-11.6-3.3-16.6-.1-.5-.3-.9-.3-1zm32.4 6.4c.1.1-.3 2.6-.7 4-1.1 4.5-4.1 11.3-7.7 17.6-.6 1.1-1.2 2-1.3 2.1-.1 0-.9-.4-1.8-1-3.5-2.1-7.6-4-11.9-5.8-1.2-.5-2.3-.9-2.3-1-.2-.2 9.6-6.7 14.8-9.8 4.1-2.5 10.8-6.2 10.9-6.1zm2.3.4c.3 0 5.8 1.5 8.7 2.4 7.2 2.1 15.4 5.1 20.7 7.6l2.2 1-1.6.4c-13.1 3-24.3 6.5-35.1 10.9-.9.4-1.7.7-1.7.7-.1 0 .2-.7.6-1.6 3.3-6.9 5.4-14.1 5.9-20.3.2-.6.3-1.1.3-1.1zM260.6 160c.1-.1 4.3.9 6.6 1.6 3.5 1 10.8 3.4 10.8 3.6 0 0-.8.7-1.8 1.6-4 3.3-7.8 6.8-12.4 11.3-1.4 1.3-2.5 2.4-2.6 2.4s-.1-.2-.1-.4c.7-5.1.5-11.7-.4-18.4 0-1-.1-1.7-.1-1.7zm89 .1c.1.1-2 3.2-3.2 5-1.8 2.6-4.5 6.1-10.6 13.7-3.2 4-6.8 8.6-8 10.1s-2.2 2.8-2.3 2.8c0 0-.4-.5-.9-1.2-3.4-5.1-7.5-9.6-12.3-13.6-.9-.8-1.9-1.6-2.3-1.8-.3-.2-.6-.5-.6-.5 0-.1 5.2-2.3 9.1-3.9 6.9-2.8 16.3-6.2 23.3-8.3 3.8-1.3 7.8-2.4 7.8-2.3zm2.4.6c.1 0 .9.3 1.7.9 7.4 4.2 14.7 9.7 20.4 15.3 1.6 1.6 5.6 5.7 5.5 5.8 0 0-1.4.1-3 .2-12.8 1-29.2 3.7-45 7.5-1.1.2-2 .5-2.1.5s1.1-1.2 2.6-2.6c9.3-8.9 13.5-14.6 18.5-24.6.7-1.7 1.3-2.9 1.4-3-.1 0-.1 0 0 0zm-67.9 6.9c.4.1 4.4 2 7.4 3.4 2.7 1.4 6.9 3.6 7.1 3.7 0 0-1.4.8-3.2 1.7-5.7 2.9-10.6 5.6-15.8 8.7-1.5.9-2.7 1.6-2.7 1.6-.1 0-.1-.1.7-1.6 2.7-5 4.9-11 6.2-16.8.1-.4.2-.7.3-.7zm-3.9.8c.1.1-.9 3.8-1.6 5.9-1.2 3.9-3.4 8.7-5.4 12.4-.5.9-1.2 2.1-1.6 2.8l-.8 1.2-1.7-1.6c-2-1.9-3.6-3.1-5.7-4.2-.8-.4-1.5-.8-1.5-.9 0-.2 5.2-5 9.2-8.4 2.9-2.5 9-7.3 9.1-7.2zm24.2 9.9l1.5 1c3.4 2.2 7.4 5.2 10.5 7.8 1.7 1.4 5.1 4.4 5.8 5.2l.4.4-2.5.7c-14 3.9-24.7 7.3-37.3 11.9-1.4.5-2.6.9-2.7.9-.2 0-.3.2 2.8-2.7 8-7.4 15.2-15.6 20.5-23.5zm-6.4 1.6c.1.1-4.1 5.9-6.6 9.3-3 4-8.3 10.6-11.9 14.9-1.5 1.8-2.8 3.3-2.9 3.3s-.1-.4-.1-1.1c0-3.7-.9-7.6-2.6-11-.7-1.4-.8-1.7-.7-1.9.6-.5 9.4-5.6 15.1-8.6 3.7-2 9.6-5 9.7-4.9zm-38.5 9.4c.1 0 .8.4 1.6.8 1.9 1.1 3.7 2.3 5.2 3.5.1.1-.7.7-1.8 1.5-2.9 2.1-7.3 5.4-9.8 7.4-2.7 2.1-2.8 2.2-2.5 1.7 2-3.1 3-4.8 4.1-7 .9-2 1.9-4.3 2.6-6.4.2-.8.5-1.5.6-1.5zm10.3 8.1c.2 0 .3.2 1.2 1.5 1.7 2.6 3.1 6.1 3.4 8.9l.1.6-4.2 1.6c-7.5 2.9-14.4 5.8-19 7.9-1.3.6-3.6 1.7-5.1 2.4-1.5.8-2.7 1.3-2.7 1.3s.9-.7 2.1-1.6c9.1-6.6 17-13.9 22.9-21.1.6-.8 1.2-1.5 1.3-1.5zm-4.7 1.1c.1.1-3.4 4.1-5.7 6.5-5.9 6-11.7 10.7-18.9 15.3-.9.6-1.7 1.1-1.8 1.2-.2.1.1-.2 3.2-3.6 2-2.2 3.5-4 5.3-6.2 1.2-1.5 1.4-1.7 3-2.9 4.4-3.4 14.7-10.4 14.9-10.3z" fill="url(#c)"/><path d="M133.1 324.7c-.6 0-1.1.1-1.7.1-11.4.6-19 5.6-23.5 15.4-3.8 8.8-3.4 20.4 0 29.2 4 8.7 10.5 13.3 21.3 15 2.3.4 3.8 1.6 8.3 6.8l5.5 6.4h9.9l-6.6-6.6c-3.6-3.6-6.6-6.8-6.6-7.1s1.4-.9 3.1-1.4c5.6-1.7 10.2-6 13.4-12.6 2.6-5.3 3-6.9 3.4-13.5 1-19.6-9.3-31.8-26.5-31.7zm8.7 51.2c-4.8 2.3-11.8 2.8-16.4 1.1-4.7-1.7-9.3-6.6-11.4-12.2-2.3-6.1-2-17.3.7-22.3 4.2-8 9.8-11.7 17.9-11.7 12 0 18.9 7.4 19.8 21.2.7 11.6-3.2 20.3-10.6 23.9zm171.1-34.5c-4.2 0-7.3 1.7-9.5 5l-1.7 2.6v-6.8h-7.2v40.9h7.2V370c0-12 .1-13.4 1.8-16.6 2.3-4.5 6.3-6.7 10.1-5.7l2.6.7v-7.1zm-42.2-.4c-1.4 0-2.9.2-4.4.5-9.6 2.5-15 11.7-14.7 21.2 0 7.9 1.5 11.9 5.4 16.1 7.8 6.4 14.9 6.9 24.5 3.5 1.6-.7 3.4-1.5 3.4-1.5v-6.4l-3.4 1.8c-7.7 3.4-13.6 3.4-18.3-.6-3-3-4.3-6.7-4.9-10.8h29v-5.5c0-11.3-6.8-18.4-16.6-18.3zM259 359s1.1-7 5-9.8c1.9-1.3 4.1-2 6.3-2s4.3.7 6.1 2.1c3.6 2.8 4.3 9.7 4.3 9.7zm-173.4-7.4c-7.8-4.7-11.3-8.1-10.8-12.1 1.2-11.1 14.9-9.6 22.5-5.4l.1-7.5s-4.2-1.8-10.2-1.9c-9.2-.1-15.2 2.9-18 9.1-4.1 9.1-.5 16 12.7 23.6 7.4 4.3 10.7 8 10.7 12.1 0 8.4-10.1 11.3-20.6 6.1-2.2-1.1-4-2-4.1-2-.4 2.4-.2 8.1-.2 8.1s3.2 1.3 8 2.3c12 2.4 22.8-3.2 23.9-12.3.8-8.6-2.3-13.1-14-20.1zm291-10.6c-1.4 0-2.9.2-4.4.5-9.6 2.5-15 11.7-14.7 21.2 0 7.9 1.5 11.9 5.4 16 7.8 6.4 14.9 7 24.6 3.5 1.6-.7 3.4-1.5 3.4-1.5v-6.4l-3.4 1.8c-7.8 3.4-13.6 3.4-18.3-.6-3-3-4.3-6.6-4.9-10.8h28.9v-5.5c0-11.3-6.8-18.4-16.6-18.2zm-11.8 17.9s1.1-7 5-9.8c1.9-1.4 4.1-2 6.2-2s4.3.7 6.1 2.1c3.6 2.8 4.3 9.7 4.3 9.7zM233 351.7c-7.8-4.7-11.2-8.1-10.8-12.1 1.2-11.1 14.9-9.6 22.5-5.4l.1-7.5s-4.2-1.8-10.2-1.9c-9.2-.1-15.2 2.9-18 9.1-4.1 9.1-.4 16 12.7 23.6 7.4 4.3 10.6 8 10.6 12 0 8.4-10.1 11.4-20.6 6.1-2.1-1.1-4-2-4.1-2-.4 2.4-.2 8.1-.2 8.1s3.2 1.3 8 2.3c12 2.4 22.8-3.2 23.9-12.3.9-8.5-2.2-13-13.9-20zm185.8-10.4c-4.2 0-7.4 1.7-9.5 5l-1.7 2.6v-6.8h-7.2V383h7.2v-13c0-12 .1-13.4 1.8-16.6 2.3-4.5 6.3-6.7 10.1-5.6l2.6.7v-7.1zm-243 10.2v-26.1h-7.2v57.7h30.5v-6.8h-23.2zm167.7 8.1l-6 15.5-5.7-15.6-5.8-17.3h-7.4c4.8 13.6 10 27.5 15.3 40.9 2.3.1 4.6 0 6.9 0l8.1-20.3 8.2-20.7H350c-.1.1-3.2 8.3-6.5 17.5zm-150.9-49.9c1.2 0 2.1-.4 2.9-1.2s1.2-1.7 1.2-2.9-.4-2.1-1.2-2.9c-.8-.7-1.7-1.1-2.9-1.1s-2.2.4-2.9 1.2c-.8.8-1.2 1.8-1.2 2.9 0 1.2.4 2.2 1.2 2.9.7.7 1.7 1.1 2.9 1.1zM190 303c.7-.7 1.5-1 2.6-1 1 0 1.9.3 2.6 1s1.1 1.5 1.1 2.6c0 1-.4 1.9-1.1 2.6s-1.6 1-2.6 1-1.9-.3-2.6-1-1.1-1.6-1.1-2.6c.1-1 .4-1.9 1.1-2.6zm1.7 3h.5c.3 0 .7.3.9.9l.6 1.3h.9l-.7-1.4c-.3-.6-.6-.9-.9-1 .4-.1.7-.2 1-.5.2-.2.3-.6.3-.9 0-.4-.1-.7-.4-1s-.8-.4-1.5-.4h-1.5v5.2h.7zm0-2.4h.7c.5 0 .8.1 1 .2s.2.3.2.7c0 .6-.4.9-1.1.9h-.8zM72 305.5c0-1.8-.1-3.2-.1-4 .2.9.4 1.6.6 2.1l7 15.5h1.2l7-15.7c.2-.4.4-1.1.6-2h.1c-.1 1.6-.2 2.9-.2 4v13.7h2.4v-20.4h-3L81.1 313c-.2.6-.6 1.4-1 2.5H80c-.1-.6-.5-1.4-.9-2.4l-6.3-14.3h-3.2v20.4h2.3zm23.7.1h2.1v12.7h-2.1zm1-4.7c.4 0 .8-.1 1.1-.4s.5-.6.5-1.1c0-.4-.1-.8-.5-1.1-.3-.3-.7-.4-1.1-.4s-.8.1-1.1.4-.5.7-.5 1.1c0 .5.1.8.5 1.1.3.3.7.4 1.1.4zm15.7 17.6v-2.2c-1.1.8-2.3 1.3-3.6 1.3-1.5 0-2.7-.5-3.6-1.5s-1.4-2.3-1.4-4c0-1.8.5-3.2 1.4-4.2s2.2-1.5 3.6-1.5c1.2 0 2.4.4 3.5 1.1V305c-1-.5-2.1-.7-3.4-.7-2.3 0-4.2.7-5.5 2.2-1.3 1.4-2 3.4-2 5.8 0 2.1.6 3.9 1.9 5.2 1.3 1.4 3 2.1 5 2.1 1.7-.1 3-.4 4.1-1.1zm5.9-6.7c0-1.7.4-3 1.1-4 .7-.8 1.4-1.3 2.4-1.3.8 0 1.4.1 1.8.5v-2.4c-.3-.1-.8-.2-1.4-.2-.8 0-1.6.3-2.2.8-.7.6-1.3 1.4-1.6 2.5h-.1v-3H116v14.6h2.3zm13.4 7.7c2.2 0 4-.7 5.3-2.1s2-3.3 2-5.6c0-2.4-.6-4.2-1.8-5.6s-2.9-2-5.1-2-4 .7-5.3 1.9c-1.4 1.4-2.1 3.4-2.1 5.9 0 2.2.6 4 1.9 5.4 1.2 1.4 2.9 2.1 5.1 2.1zm-3.3-11.8c.9-.9 2.1-1.4 3.5-1.4 1.5 0 2.6.5 3.5 1.4.8 1 1.3 2.4 1.3 4.2s-.4 3.2-1.2 4.1c-.8 1-2 1.5-3.5 1.5s-2.7-.5-3.6-1.5-1.3-2.3-1.3-4.1c-.1-1.8.3-3.2 1.3-4.2zm20.7 10.6c.9-.8 1.4-1.8 1.4-3 0-1.1-.4-2-1.1-2.7-.6-.6-1.4-1.1-2.7-1.6-1.1-.5-1.8-.9-2.2-1.2-.4-.4-.6-.8-.6-1.5 0-.6.2-1.1.7-1.4.5-.4 1.1-.6 1.9-.6 1.3 0 2.3.3 3.3 1V305c-.9-.5-2-.7-3.1-.7-1.5 0-2.8.4-3.7 1.2-1 .8-1.4 1.8-1.4 3 0 1.1.3 2 .9 2.6.5.6 1.4 1.1 2.6 1.6s2 1 2.4 1.4.6.8.6 1.4c0 1.4-.9 2.1-2.8 2.1-1.4 0-2.7-.5-3.8-1.4v2.5c1 .6 2.2.9 3.6.9 1.7-.1 3.1-.5 4-1.3zm11.1-14c-2.2 0-4 .7-5.3 1.9-1.4 1.4-2.1 3.4-2.1 5.9 0 2.2.6 4 1.9 5.4s3 2.1 5.2 2.1 4-.7 5.3-2.1 2-3.3 2-5.6c0-2.4-.6-4.2-1.8-5.6-1.3-1.4-3-2-5.2-2zm4.6 7.6c0 1.8-.4 3.2-1.2 4.1-.8 1-2 1.5-3.5 1.5s-2.7-.5-3.6-1.5-1.3-2.3-1.3-4.1c0-1.9.5-3.3 1.4-4.3.9-.9 2.1-1.4 3.5-1.4s2.6.5 3.4 1.4c.9 1 1.3 2.4 1.3 4.3zm6.3 7.3h2.3v-12.6h3.4v-2h-3.4v-2.2c0-2 .8-3.1 2.4-3.1.6 0 1.1.1 1.5.4v-2.1c-.4-.2-1-.2-1.7-.2-1.3 0-2.3.4-3.1 1.2-1 .9-1.5 2.1-1.5 3.8v2.4h-2.5v2h2.5zm9.6-4c0 2.8 1.3 4.3 3.8 4.3.9 0 1.6-.1 2.2-.5v-2c-.4.3-.9.5-1.5.5-.8 0-1.3-.2-1.7-.6-.3-.4-.5-1.1-.5-2.1v-8.2h3.7v-2H183v-4.3c-.8.3-1.6.5-2.3.7v3.5h-2.5v2h2.5zm250.5 26.9c-.8-.7-1.7-1.1-2.9-1.1s-2.2.4-2.9 1.2c-.8.8-1.2 1.8-1.2 2.9 0 1.2.4 2.1 1.2 2.9.8.7 1.8 1.1 2.9 1.1 1.2 0 2.1-.4 2.9-1.2s1.2-1.7 1.2-2.9c.1-1.2-.4-2.2-1.2-2.9zm-.3 5.5c-.7.7-1.5 1-2.6 1-1 0-1.9-.3-2.6-1s-1.1-1.6-1.1-2.6.3-1.9 1-2.6 1.5-1 2.6-1c1 0 1.9.3 2.6 1s1.1 1.6 1.1 2.6-.3 1.9-1 2.6zm-2.1-2.4c.4-.1.7-.3 1-.5.2-.2.3-.6.3-.9 0-.4-.1-.7-.4-1s-.8-.4-1.5-.4h-1.5v5.2h.7v-2.2h.5c.3 0 .6.3.9.9l.6 1.3h.9l-.7-1.4c-.3-.6-.6-.9-.8-1zm-.5-.5h-.8V343h.7c.5 0 .8.1 1 .2s.2.3.2.7c-.1.6-.4.8-1.1.8zM298 304h.7v-5.2h1.7v-.7h-4.1v.7h1.7zm3.9-3.9v-1.2c0 .3.1.5.2.6l2 4.5h.3l2-4.5c.1-.1.1-.3.2-.6v5.1h.7v-5.9h-.8l-1.8 4.1c0 .1-.2.4-.3.8h-.1c0-.2-.1-.4-.3-.7l-1.8-4.1h-.9v5.9h.7z" fill="#231f1f"/></svg>
-                    <p class="sql">SQL Server</p>
-                </div>
-               
-                <div class="skills-lenguajes-items" data-aos="zoom-in">
-                    <svg  viewBox="-7.938 -7.939 72.731 49.537" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg"><g stroke-width=".187"><path d="m21.72 24.79c-1.143 6.217-2.65 10.74-4.521 13.55-1.458 2.172-3.055 3.258-4.794 3.258-.464 0-1.035-.14-1.714-.418v-1.5c.331.05.72.075 1.167.075.811 0 1.465-.224 1.963-.673.596-.547.894-1.161.894-1.842 0-.465-.233-1.42-.696-2.864l-3.08-9.59h2.757l2.21 7.173c.497 1.628.704 2.765.621 3.413 1.21-3.238 2.054-6.766 2.534-10.58h2.658m-12.17 12.4h-2.806c-.099-4.75-.372-9.215-.82-13.4h-.023l-4.273 13.4h-2.138l-4.247-13.4h-.025c-.315 4.018-.513 8.483-.596 13.4h-2.559c.165-5.978.58-11.58 1.241-16.81h3.478l4.049 12.35h.025l4.074-12.35h3.328c.728 6.126 1.159 11.73 1.29 16.81" fill="#00758f"/><path d="m59.08 37.19h-7.973v-16.81h2.683v14.74h5.29v2.068m-20.05-3.363c-.68-1.096-1.019-2.854-1.019-5.279 0-4.233 1.284-6.351 3.85-6.351 1.342 0 2.327.507 2.956 1.519.678 1.096 1.018 2.84 1.018 5.231 0 4.267-1.284 6.402-3.85 6.402-1.341 0-2.327-.506-2.955-1.52m9.985 3.768-3.082-1.524c.274-.226.535-.47.77-.75 1.31-1.543 1.964-3.826 1.964-6.849 0-5.562-2.178-8.344-6.533-8.344-2.136 0-3.801.705-4.993 2.118-1.31 1.544-1.963 3.82-1.963 6.824 0 2.955.58 5.123 1.738 6.5 1.056 1.245 2.653 1.868 4.792 1.868.798 0 1.53-.098 2.195-.295l4.013 2.342 1.094-1.89m-15-5.065c0 1.426-.522 2.596-1.564 3.512-1.042.911-2.443 1.369-4.196 1.369-1.64 0-3.23-.527-4.77-1.57l.721-1.444c1.325.664 2.524.995 3.6.995 1.01 0 1.8-.225 2.372-.67.57-.449.913-1.074.913-1.867 0-.998-.695-1.851-1.968-2.567a306.291 306.291 0 0 1 -3.526-1.998c-1.273-.932-1.912-1.931-1.912-3.577 0-1.362.476-2.463 1.427-3.3.953-.84 2.183-1.26 3.689-1.26 1.557 0 2.972.417 4.247 1.248l-.648 1.443c-1.09-.464-2.166-.697-3.227-.697-.86 0-1.524.208-1.986.624-.465.413-.752.945-.752 1.593 0 .996.71 1.86 2.019 2.59 1.19.647 3.599 2.024 3.599 2.024 1.31.93 1.963 1.921 1.963 3.554m26.979 4.658h.445v-1.71h.581v-.35h-1.63v.35h.604zm3.383 0h.419v-2.06h-.63l-.513 1.404-.559-1.404h-.607v2.06h.397v-1.568h.022l.585 1.568h.302l.584-1.568z" fill="#f29111"/><path d="m36.78-7.929c-.709-.01-1.327.257-1.646 1.042-.547 1.321.81 2.62 1.277 3.291.344.467.79.996 1.032 1.523.142.345.183.712.325 1.077.324.894.627 1.889 1.053 2.723.222.427.465.874.749 1.258.163.225.446.325.507.692-.283.405-.305 1.015-.466 1.524-.73 2.295-.446 5.139.587 6.825.324.507 1.094 1.625 2.128 1.198.912-.365.71-1.523.972-2.538.061-.246.02-.407.142-.57v.042c.283.568.568 1.115.831 1.686.629.994 1.722 2.03 2.634 2.72.485.367.87.996 1.478 1.22v-.062h-.04c-.122-.182-.304-.264-.466-.405-.365-.366-.769-.813-1.053-1.22-.85-1.136-1.601-2.396-2.268-3.696-.325-.631-.608-1.321-.872-1.95-.121-.243-.121-.61-.324-.731-.305.446-.75.833-.972 1.379-.385.875-.425 1.951-.568 3.068-.08.021-.04 0-.08.04-.648-.162-.871-.832-1.115-1.4-.608-1.443-.71-3.76-.182-5.424.14-.426.75-1.766.506-2.173-.122-.388-.527-.61-.75-.915a8.054 8.054 0 0 1 -.728-1.3c-.486-1.137-.73-2.397-1.256-3.534-.243-.53-.67-1.077-1.013-1.564-.386-.549-.81-.935-1.115-1.584-.1-.224-.242-.59-.08-.833.039-.163.121-.224.284-.265.261-.223 1.012.06 1.275.182.75.304 1.378.59 2.005 1.015.283.204.587.59.952.692h.426c.648.142 1.378.04 1.986.223 1.073.345 2.045.853 2.917 1.401a18.007 18.007 0 0 1 6.319 6.947c.244.467.346.894.568 1.38.426.998.953 2.013 1.378 2.987.425.955.831 1.93 1.44 2.722.302.426 1.518.65 2.065.873.405.182 1.033.345 1.398.568.69.426 1.376.914 2.025 1.382.324.244 1.336.751 1.397 1.158-1.62-.04-2.876.122-3.93.57-.303.121-.789.121-.83.507.163.162.182.426.325.65.243.407.667.954 1.053 1.24.426.325.851.649 1.297.933.79.49 1.681.773 2.45 1.26.447.284.892.65 1.338.955.222.162.363.427.648.527v-.062c-.143-.182-.183-.446-.324-.65-.202-.202-.405-.385-.608-.588a9.674 9.674 0 0 0 -2.106-2.05c-.649-.449-2.068-1.059-2.33-1.808l-.041-.041c.445-.041.973-.204 1.399-.327.687-.183 1.316-.142 2.025-.324.324-.082.648-.184.974-.283v-.185c-.367-.364-.629-.853-1.013-1.198-1.032-.893-2.168-1.766-3.343-2.499-.63-.406-1.44-.669-2.108-1.015-.242-.122-.647-.182-.79-.386-.364-.447-.568-1.035-.83-1.564a50.647 50.647 0 0 1 -1.661-3.535c-.365-.792-.588-1.583-1.033-2.315-2.088-3.454-4.356-5.545-7.84-7.597-.75-.427-1.641-.61-2.592-.833-.508-.021-1.013-.06-1.52-.08-.325-.144-.65-.53-.933-.713-.722-.457-2.156-1.247-3.337-1.265zm4.998 5.021c-.344 0-.586.042-.83.102v.04h.039c.163.325.447.55.648.834.163.325.305.649.467.974l.04-.04c.285-.203.427-.528.427-1.016-.123-.143-.142-.284-.244-.427-.121-.202-.385-.304-.547-.467z" fill="#00758f"/></g></svg>
-                    <p class="mysql">MySQL</p>
-                </div>
-                <!-- <div class="skills-lenguajes-items">
-                    <img src="img/aspnet-mvc.png" alt="">
-                    <p class="asp-net">.NET</p>
-                </div> -->
-                
-            </div>
-        </div>
-
-        <div data-aos="zoom-in" class="frontend">
-            <div class="skills-items" >
-                <h2 >Frontend</h2>  
-            </div>
-            <div class="skills-lenguajes">
-                
-                
-                <div class="skills-lenguajes-items" data-aos="zoom-in">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100px" height="100px"><path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"/><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"/><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"/><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"/></svg>
-                    <p class="html">HTML</p>
-                </div>
-                <div class="skills-lenguajes-items" data-aos="zoom-in">
-                    
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100px" height="100px"><path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"/><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"/><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"/><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"/></svg>
-                    <p class="css3">CSS</p>
-
-                </div>
-                <div class="skills-lenguajes-items" data-aos="zoom-in">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100px" height="100px"><path fill="#ffd600" d="M6,42V6h36v36H6z"/><path fill="#000001" d="M29.538 32.947c.692 1.124 1.444 2.201 3.037 2.201 1.338 0 2.04-.665 2.04-1.585 0-1.101-.726-1.492-2.198-2.133l-.807-.344c-2.329-.988-3.878-2.226-3.878-4.841 0-2.41 1.845-4.244 4.728-4.244 2.053 0 3.528.711 4.592 2.573l-2.514 1.607c-.553-.988-1.151-1.377-2.078-1.377-.946 0-1.545.597-1.545 1.377 0 .964.6 1.354 1.985 1.951l.807.344C36.452 29.645 38 30.839 38 33.523 38 36.415 35.716 38 32.65 38c-2.999 0-4.702-1.505-5.65-3.368L29.538 32.947zM17.952 33.029c.506.906 1.275 1.603 2.381 1.603 1.058 0 1.667-.418 1.667-2.043V22h3.333v11.101c0 3.367-1.953 4.899-4.805 4.899-2.577 0-4.437-1.746-5.195-3.368L17.952 33.029z"/></svg>
-                    <p class="JavaScript">JavaScript</p>
-                </div>
-                <div class="skills-lenguajes-items" data-aos="zoom-in">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100px" height="100px"><path fill="#673ab7" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z"/><path fill="#fff" d="M33.03,25.6c-0.65-0.9-1.59-1.52-2.8-1.85c0,0,1.02-0.37,1.94-1.75c0.55-0.88,0.83-1.94,0.83-3.18 c0-2.15-0.78-3.8-2.34-4.93C29.1,12.76,27.34,12,24.35,12H15v24h10.43c2.83-0.02,4.96-0.63,6.41-1.8c1.44-1.19,2.16-2.95,2.16-5.3 C34,27.6,33.68,26.5,33.03,25.6z M21,16c0,0,4.17,0,4.25,0c1.52,0,2.75,1.23,2.75,2.75c0,1.52-1.23,2.75-2.75,2.75 c-0.08,0-4.25,0-4.25,0V16z M26,32h-5v-6h5c1.66,0,3,1.34,3,3C29,30.66,27.66,32,26,32z"/></svg>
-                    <p class="bootstrap">Bootstrap 5</p> 
-                </div>
-                
-            </div>
-        </div>
-
-        <div data-aos="zoom-in" class="tecnologias-herramientas" > 
-            <div class="tecnologias" >
-                <h2 >Tecnologías y Herramientas</h2>  
-            </div>
-            <div class="skills-lenguajes">
-                <div class="skills-lenguajes-items " data-aos="zoom-in"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="100px" height="100px"><path fill="#F4511E" d="M42.2,22.1L25.9,5.8C25.4,5.3,24.7,5,24,5c0,0,0,0,0,0c-0.7,0-1.4,0.3-1.9,0.8l-3.5,3.5l4.1,4.1c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3c0,0.5-0.1,0.9-0.3,1.3l4,4c0.4-0.2,0.8-0.3,1.3-0.3c1.7,0,3,1.3,3,3s-1.3,3-3,3c-1.7,0-3-1.3-3-3c0-0.5,0.1-0.9,0.3-1.3l-4-4c-0.1,0-0.2,0.1-0.3,0.1v10.4c1.2,0.4,2,1.5,2,2.8c0,1.7-1.3,3-3,3s-3-1.3-3-3c0-1.3,0.8-2.4,2-2.8V18.8c-1.2-0.4-2-1.5-2-2.8c0-0.5,0.1-0.9,0.3-1.3l-4.1-4.1L5.8,22.1C5.3,22.6,5,23.3,5,24c0,0.7,0.3,1.4,0.8,1.9l16.3,16.3c0,0,0,0,0,0c0.5,0.5,1.2,0.8,1.9,0.8s1.4-0.3,1.9-0.8l16.3-16.3c0.5-0.5,0.8-1.2,0.8-1.9C43,23.3,42.7,22.6,42.2,22.1z"/></svg>
-                    <p class="git">Git</p>
-                </div>
-                <div class="skills-lenguajes-items " data-aos="zoom-in" data-aos="zoom-in"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 30 30" width="100px" height="100px"><path d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"/></svg>
-                    <p class="github">GitHub</p>
-                </div>
-                <div class="skills-lenguajes-items " data-aos="zoom-in"> 
-                    <svg width="100px" height="100px" viewBox="0 0 256 264" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
-                        <g>
-                            <path d="M188.370104,263.646853 L90.4460239,168.606598 L32.4941514,212.720701 L0.508940239,196.675315 L0.533418327,67.2117291 L32.6180717,51.0755697 L90.6143108,95.2238406 L188.299219,0.0943426295 L255.467602,27.0192191 L255.49055,236.824478 L188.370104,263.646853" fill="#FFFFFF"></path>
-                            <path d="M238.471649,38.5183108 L192.237641,19.9848287 L91.9759044,117.622311 L30.7704861,71.0308207 L17.5288606,77.6903904 L17.5079522,186.187474 L30.6368765,192.7731 L91.788749,146.222916 L192.298327,243.773195 L238.492558,225.313657 L238.471649,38.5183108 L238.471649,38.5183108 Z M37.3586614,157.394614 L37.325004,106.471012 L65.6532908,131.760956 L37.3586614,157.394614 L37.3586614,157.394614 Z M127.989291,131.742088 L184.624446,89.4036653 L184.646884,174.411984 L127.989291,131.742088 L127.989291,131.742088 Z" fill="#68217A"></path>
-                        </g>
-                    </svg>
-                    <p class="visual_IDE">IDE Visual Studio </p>
-                </div>
-                <div class="skills-lenguajes-items" data-aos="zoom-in"> 
-                    <svg  viewBox="-11.9 -2 1003.9 995.6" width="100px" height="100px" xmlns="http://www.w3.org/2000/svg"><path d="m12.1 353.9s-24-17.3 4.8-40.4l67.1-60s19.2-20.2 39.5-2.6l619.2 468.8v224.8s-.3 35.3-45.6 31.4z" fill="#2489ca"/><path d="m171.7 498.8-159.6 145.1s-16.4 12.2 0 34l74.1 67.4s17.6 18.9 43.6-2.6l169.2-128.3z" fill="#1070b3"/><path d="m451.9 500 292.7-223.5-1.9-223.6s-12.5-48.8-54.2-23.4l-389.5 354.5z" fill="#0877b9"/><path d="m697.1 976.2c17 17.4 37.6 11.7 37.6 11.7l228.1-112.4c29.2-19.9 25.1-44.6 25.1-44.6v-671.2c0-29.5-30.2-39.7-30.2-39.7l-197.7-95.3c-43.2-26.7-71.5 4.8-71.5 4.8s36.4-26.2 54.2 23.4v887.5c0 6.1-1.3 12.1-3.9 17.5-5.2 10.5-16.5 20.3-43.6 16.2z" fill="#3c99d4"/></svg>
-                    <p class="visualStudioCode">Visual Studio Code</p>
-                </div>
-                
-                <div class="skills-lenguajes-items" data-aos="zoom-in"> 
-                   <svg width="100px" height="100px" viewBox="0 0 256 174" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><g fill="#00979C"><path d="M14.044 130.399L.919 173.242h10.328l2.369-7.983h12.803l2.305 7.983h11.231l-13.124-42.843H14.044zm2.166 26.242l3.899-13.325 3.855 13.325H16.21zM64.632 153.696a8.386 8.386 0 0 0-.474-.47c.323-.122.638-.252.946-.394a10.782 10.782 0 0 0 3.255-2.28 10.007 10.007 0 0 0 2.148-3.389c.5-1.287.754-2.766.754-4.393 0-2.243-.405-4.183-1.201-5.768a10.17 10.17 0 0 0-3.461-3.924c-1.447-.97-3.207-1.671-5.232-2.082-1.946-.395-4.138-.597-6.513-.597H41.456v42.843h10.275v-16.74h.305c1.124 0 2.061.247 2.864.757.797.505 1.408 1.25 1.871 2.282l6.21 13.701h11.955l-7.545-15.283c-.914-1.856-1.817-3.249-2.759-4.263zm-4.469-8.219a3.95 3.95 0 0 1-1.26 1.418c-.581.408-1.302.721-2.146.931-.891.223-1.908.335-3.024.335h-2.002v-9.019h2.258c2.352 0 4.1.369 5.195 1.098.954.635 1.418 1.705 1.418 3.273 0 .758-.144 1.401-.439 1.964zM105.04 135.487c-1.73-1.739-3.912-3.041-6.485-3.868-2.508-.809-5.46-1.22-8.773-1.22H76.193v42.843h11.829c3.817 0 7.156-.52 9.923-1.545 2.81-1.039 5.157-2.547 6.974-4.481 1.814-1.93 3.166-4.288 4.016-7.007.834-2.662 1.256-5.656 1.256-8.899 0-3.535-.423-6.636-1.259-9.217-.854-2.644-2.163-4.866-3.892-6.606zm-8.401 26.037c-1.784 1.982-4.372 2.945-7.912 2.945h-2.26v-25.297h2.803c1.981 0 3.644.28 4.941.833 1.258.535 2.231 1.291 2.975 2.309.76 1.044 1.311 2.354 1.637 3.891.343 1.626.518 3.51.518 5.6 0 4.458-.909 7.728-2.702 9.719zM134.942 157.654c0 1.477-.136 2.736-.407 3.742-.252.939-.623 1.706-1.105 2.279a3.893 3.893 0 0 1-1.726 1.189c-.761.272-1.734.409-2.894.409-1.227 0-2.239-.157-3.008-.468a4.505 4.505 0 0 1-1.817-1.31c-.486-.585-.834-1.319-1.035-2.185-.224-.956-.337-2.081-.337-3.347v-27.564h-10.274v28.028c0 2.316.287 4.442.851 6.318.587 1.949 1.555 3.634 2.878 5.005 1.323 1.37 3.055 2.43 5.148 3.147 2.034.701 4.492 1.056 7.305 1.056 2.515 0 4.823-.355 6.857-1.056 2.08-.713 3.873-1.794 5.33-3.214 1.458-1.422 2.589-3.212 3.362-5.32.76-2.07 1.146-4.494 1.146-7.205v-26.759h-10.274v27.255M150.47 139.018h9.22v25.544h-9.22v8.68h28.843v-8.68h-9.22v-25.544h9.22v-8.619H150.47v8.619M207.905 154.811l-11.486-24.412H184.79v42.843h9.569v-24.876l11.547 24.876h11.57v-42.843h-9.571v24.412M250.738 135.468c-3-3.815-7.497-5.749-13.364-5.749-2.51 0-4.904.445-7.116 1.322-2.243.889-4.225 2.273-5.892 4.117-1.652 1.828-2.964 4.179-3.897 6.986-.923 2.771-1.391 6.094-1.391 9.878 0 6.99 1.487 12.428 4.419 16.166 3 3.826 7.497 5.765 13.364 5.765 2.511 0 4.907-.445 7.119-1.322 2.244-.89 4.225-2.275 5.89-4.116 1.65-1.827 2.962-4.177 3.898-6.986.921-2.77 1.389-6.093 1.389-9.879 0-7.01-1.487-12.455-4.419-16.182zm-6.762 22.261c-.294 1.581-.753 2.914-1.364 3.963-.58.999-1.298 1.731-2.193 2.236-.892.503-2.003.758-3.301.758-2.568 0-4.358-.956-5.472-2.921-1.224-2.159-1.845-5.561-1.845-10.115 0-2.138.154-4.059.46-5.706.294-1.578.756-2.909 1.376-3.958.59-1.003 1.31-1.737 2.201-2.244.879-.501 1.982-.755 3.28-.755 2.588 0 4.383.954 5.486 2.916 1.215 2.16 1.831 5.565 1.831 10.119 0 2.144-.154 4.064-.459 5.707zM240.315 5.74h1.823v4.793h1.293V5.74h1.838V4.55h-4.954v1.19M249.768 4.55l-1.247 4.078-1.29-4.078h-1.687v5.983h1.216V6.711l1.206 3.822h1.11l1.144-3.723v3.723h1.21V4.55h-1.662M190.275 120.327c-16.288 0-30.214-5.492-42.47-16.725-7.571-6.937-13.813-15.436-19.556-24.273-5.742 8.837-11.985 17.336-19.555 24.273-13.169 12.069-28.267 17.511-46.149 16.634C28.444 120.088.747 93.176.747 60.118.747 26.969 28.596 0 62.827 0c18.732 0 34.503 6.199 48.21 18.95 6.584 6.125 12.142 13.23 17.212 20.664 5.07-7.434 10.629-14.539 17.212-20.664C159.168 6.199 174.939 0 193.671 0c34.232 0 62.08 26.969 62.08 60.118 0 33.058-27.696 59.97-61.798 60.118a74.818 74.818 0 0 1-3.678.091zM140.72 59.316c6.794 11.023 13.388 21.283 21.42 28.643 9.066 8.309 18.622 11.727 30.975 11.074l.556-.015c22.531 0 40.862-17.45 40.862-38.9 0-21.449-18.331-38.9-40.862-38.9-13.301 0-24.028 4.216-33.758 13.267-7.267 6.761-13.267 15.423-19.193 24.831zM62.827 21.218c-22.531 0-40.862 17.451-40.862 38.9 0 21.45 18.331 38.9 40.862 38.9l.557.015c12.354.653 21.908-2.765 30.974-11.074 8.032-7.36 14.627-17.62 21.42-28.643-5.926-9.408-11.926-18.07-19.192-24.831-9.731-9.051-20.458-13.267-33.759-13.267z"/><path d="M196.477 52.407V40.901h-11.976v11.506h-11.505v11.918h11.505v11.591h11.976V64.325h11.506V52.407h-11.506M45.599 52.263h37.817v12.292H45.599V52.263z"/></g></svg>
-                    <p class="arduino">Arduino</p>
-                </div>
-                <!-- <div class="skills-lenguajes-items " data-aos="zoom-in"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 0 24 24" width="100px" height="100px"><path d="M 15.46875 1.5 L 2.9804688 2 A 0.50038132 0.50038132 0 0 0 2.9511719 2.0019531 A 1.0001 1.0001 0 0 0 2.9296875 2.0039062 A 1.0001 1.0001 0 0 0 2 3 L 2 16.894531 C 2 17.487 2.1760213 18.066018 2.5039062 18.558594 L 5.1679688 22.554688 A 1.0001 1.0001 0 0 0 6.0625 22.998047 L 22.0625 21.998047 A 1.0001 1.0001 0 0 0 23 21 L 23 5.5 A 1.0001 1.0001 0 0 0 22.736328 4.8242188 A 0.50037856 0.50037856 0 0 0 22.587891 4.6933594 A 0.50037856 0.50037856 0 0 0 22.585938 4.6914062 A 1.0001 1.0001 0 0 0 22.398438 4.5839844 L 18.296875 2.2441406 L 18.330078 2.265625 C 17.492273 1.6962298 16.485312 1.4260957 15.474609 1.5 L 15.46875 1.5 z M 15.525391 2.4980469 A 0.50005 0.50005 0 0 0 15.542969 2.4980469 C 16.330286 2.4394359 17.115017 2.6483002 17.767578 3.0917969 A 0.50005 0.50005 0 0 0 17.800781 3.1132812 L 20.324219 4.5527344 L 6.8554688 4.9882812 L 4.46875 2.9414062 L 15.525391 2.4980469 z M 21 6.5332031 L 21 20.060547 L 7 20.935547 L 7 6.984375 L 21 6.5332031 z M 19.441406 8.5019531 C 18.427406 8.5619531 17.407625 8.6115 16.390625 8.6875 C 16.056625 8.7125 15.808578 9.0013594 15.767578 9.3183594 C 15.748578 9.4663594 15.789031 9.5426875 15.957031 9.5546875 C 16.265031 9.5776875 16.570625 9.6212031 16.890625 9.6582031 L 16.890625 15.527344 C 16.796625 15.392344 16.745266 15.321047 16.697266 15.248047 C 15.387266 13.269047 14.071438 11.293641 12.773438 9.3066406 C 12.577437 9.0066406 12.393953 8.86225 12.001953 8.90625 C 11.084953 9.00725 10.160234 9.0373281 9.2402344 9.1113281 C 8.7302344 9.1523281 8.4274531 9.5989844 8.5644531 10.083984 C 8.9094531 10.113984 9.2572813 10.144781 9.6132812 10.175781 L 9.6132812 18.607422 C 9.3792813 18.673422 9.1461563 18.747688 8.9101562 18.804688 C 8.6701563 18.862688 8.5577187 19.024094 8.5117188 19.246094 C 8.4747187 19.424094 8.5183281 19.514047 8.7363281 19.498047 C 9.4853281 19.445047 10.238281 19.412188 10.988281 19.367188 C 11.298281 19.349188 11.609063 19.342969 11.914062 19.292969 C 12.330062 19.223969 12.556563 18.970453 12.601562 18.564453 C 12.231563 18.482453 11.859375 18.392312 11.484375 18.320312 C 11.317375 18.288312 11.260719 18.219875 11.261719 18.046875 C 11.267719 16.090875 11.266578 14.133734 11.267578 12.177734 C 11.267578 12.113734 11.280969 12.048406 11.292969 11.941406 C 11.350969 12.018406 11.374484 12.049984 11.396484 12.083984 C 12.408484 13.654984 13.417547 15.229875 14.435547 16.796875 C 14.873547 17.470875 15.322203 18.137875 15.783203 18.796875 C 16.117203 19.274875 16.607063 19.426547 17.164062 19.310547 C 17.512062 19.237547 17.8465 19.098234 18.1875 18.990234 C 18.3775 18.930234 18.432641 18.807422 18.431641 18.607422 C 18.424641 15.733422 18.427734 12.860328 18.427734 9.9863281 C 18.427734 9.4513281 18.426031 9.4517969 18.957031 9.3417969 C 19.445031 9.2407969 19.588406 9.0019531 19.441406 8.5019531 z"/></svg>
-                    <p class="notion">Notion</p>
-                </div> -->
-                <div class="skills-lenguajes-items " data-aos="zoom-in"> 
-                    <svg xmlns="http://www.w3.org/2000/svg"  width="100px" height="100px" viewBox="-13.58674873666481 -3.5096047119942106 81.71274873666479 72.05384966725056"><style>.C{fill:#ff6c37}.D{fill:#fff}</style><path d="M57.327 12.44a32 32 0 1 0-5.761 44.88c13.98-10.804 16.56-30.895 5.76-44.88z" class="C"/><path d="M42.793 20.388L29.3 33.988l-3.813-3.92c13.28-13.28 14.613-12.08 17.307-9.68z" class="D"/><path d="M29.3 34.36a.48.48 0 0 1-.32-.133l-3.84-3.84a.48.48 0 0 1 0-.667c13.093-13.093 14.88-12.48 17.973-9.68a.427.427 0 0 1 .16.347c.02.13-.03.263-.133.347L29.647 34.228a.506.506 0 0 1-.347.133zm-3.147-4.293l3.147 3.147 12.8-12.8a2.88 2.88 0 0 0-3.787-.64c-2.32 1.04-6.053 4.213-12.16 10.293z" class="C"/><path d="M33.167 37.748l-3.68-3.76L42.98 20.654c3.627 3.547-1.76 9.467-9.813 17.093z" class="D"/><path d="M33.167 38.228a.56.56 0 0 1-.32-.133l-3.76-3.68a.56.56 0 0 1 0-.427.517.517 0 0 1 0-.347L42.58 20.148a.506.506 0 0 1 .693 0 4.136 4.136 0 0 1 1.333 3.173c0 3.6-4.107 8.133-11.093 14.747a.56.56 0 0 1-.347.16zm-2.987-4.24L33.193 37c5.333-5.04 10.427-10.24 10.453-13.76a3.04 3.04 0 0 0-.693-2.053z" class="C"/><path d="M25.593 30.148l2.667 2.667a.16.16 0 0 1 0 .24l-5.627 1.2a.533.533 0 0 1-.48-.907l3.28-3.253s.107 0 .16.053z" class="D"/><path d="M22.5 34.788a1.04 1.04 0 0 1-.88-.507 1.014 1.014 0 0 1 .187-1.2l3.253-3.28a.64.64 0 0 1 .853 0l2.667 2.667c.158.15.22.377.16.587s-.236.377-.453.427l-5.627 1.2zm2.987-4.053l-3.013 3.013 4.987-1.067zm.24-.24z" class="C"/><path d="M49.967 12.894c-1.93-1.862-4.962-1.94-6.986-.183s-2.37 4.773-.794 6.943 4.547 2.778 6.847 1.4l-3.627-3.627z" class="D"/><path d="M46.367 22.28a5.65 5.65 0 0 1-5.156-3.508 5.667 5.667 0 0 1 1.2-6.118 5.71 5.71 0 0 1 8 0c.102.086.16.213.16.347a.46.46 0 0 1-.16.347l-4.32 4.08 3.28 3.227a.45.45 0 0 1 .133.4.48.48 0 0 1-.213.347 5.8 5.8 0 0 1-2.933.88zm0-10.347c-1.9.01-3.6 1.153-4.313 2.9s-.325 3.758 1.007 5.1a4.665 4.665 0 0 0 5.173.987l-3.147-3.147a.427.427 0 0 1 0-.667l4.16-4.187a4.785 4.785 0 0 0-2.88-.987z" class="C"/><path d="M50.047 12.974l-4.56 4.533 3.627 3.627a5.52 5.52 0 0 0 1.013-.747 5.333 5.333 0 0 0-.08-7.413z" class="D"/><path d="M49.033 21.534a.4.4 0 0 1-.32-.133l-3.627-3.627a.427.427 0 0 1 0-.667l4.533-4.453a.48.48 0 0 1 .8 0 5.6 5.6 0 0 1 0 8 4.88 4.88 0 0 1-1.067.853.43.43 0 0 1-.32.027zM46.1 17.428l3.013 3.013a5.12 5.12 0 0 0 .587-.48 4.72 4.72 0 0 0 1.387-3.333 4.58 4.58 0 0 0-1.147-3.04z" class="C"/><path d="M43.353 20.948a1.948 1.948 0 0 0-2.667 0L28.607 33l2 2.027 12.773-11.2a1.977 1.977 0 0 0-.027-2.88z" class="D"/><path d="M30.5 35.508a.48.48 0 0 1-.32-.133l-2.027-2.027a.48.48 0 0 1 0-.667l12.08-12.027a2.454 2.454 0 0 1 4.187 1.813 2.51 2.51 0 0 1-.827 1.76l-12.773 11.2a.455.455 0 0 1-.32.08zM29.087 33l1.333 1.36 12.533-10.907c.31-.27.495-.656.507-1.067s-.15-.813-.453-1.093a1.493 1.493 0 0 0-2.107 0z" class="C"/><path d="M19.247 46.734a.27.27 0 0 0 0 .32l.533 2.32a.688.688 0 0 1-.332.7.65.65 0 0 1-.762-.077l-3.653-3.52L26.42 35h3.947l2.667 2.667a60.54 60.54 0 0 1-13.787 9.067z" class="D"/><path d="M19.007 50.654c-.302-.006-.6-.13-.8-.347l-3.493-3.493a.427.427 0 0 1 0-.667L26.18 34.654a.45.45 0 0 1 .24-.133h3.973a.48.48 0 0 1 .32 0l2.667 2.667a.426.426 0 0 1 .133.373.43.43 0 0 1-.16.347l-.213.187a65.33 65.33 0 0 1-13.68 8.773l.507 2.16a1.15 1.15 0 0 1-1.093 1.413zm-3.253-4.187L18.9 49.64a.16.16 0 0 0 .213 0 .16.16 0 0 0 0-.187l-.533-2.32a.744.744 0 0 1 .4-.853 65.56 65.56 0 0 0 13.333-8.587l-2.187-2.187h-3.573zm3.84.48z" class="C"/><path d="M12.287 49.214l2.667-2.667 4.107 4.107-6.533-.453a.534.534 0 0 1-.24-.986z" class="D"/><path d="M19.14 51.054l-6.507-.453c-.386-.036-.718-.3-.854-.653s-.053-.772.214-1.054l2.667-2.667a.48.48 0 0 1 .667 0l4.08 4.08a.452.452 0 0 1 0 .533.507.507 0 0 1-.267.213zm-6.507-1.493l5.333.347-2.933-2.747z" class="C"/><path d="M30.74 35.322l-5.387.827 3.12-3.093z" class="D"/><path d="M25.353 36.654a.456.456 0 0 1-.427-.267.45.45 0 0 1 0-.533l3.093-3.12a.506.506 0 0 1 .693 0L30.98 35a.45.45 0 0 1 0 .48.47.47 0 0 1-.373.347l-5.333.827zm3.12-2.907L26.74 35.48l2.987-.453z" class="C"/><path d="M30.74 35.32l-3.76.48a.48.48 0 0 1-.453-.8l1.947-1.947z" class="D"/><path d="M26.873 36.308a.987.987 0 0 1-.853-.507.96.96 0 0 1 .16-1.147l1.947-1.947a.506.506 0 0 1 .693 0l2.267 2.267a.48.48 0 0 1-.293.827l-3.733.48zm0-.987l2.827-.347-1.253-1.253-1.6 1.6zm23.2-19.28a.4.4 0 0 0-.507-.16.37.37 0 0 0-.186.22.377.377 0 0 0 .026.287c.187.393.135.858-.133 1.2a.338.338 0 0 0-.1.253.38.38 0 0 0 .1.253.29.29 0 0 0 .213 0 .35.35 0 0 0 .347-.107 1.84 1.84 0 0 0 .24-1.947z" class="C"/></svg>
-                    <p class="postman">Postman</p>
-                </div>
-            </div>
-     </div>
-    </section>
-    <section class="seccion-contacto" id="contacto">
-        <div class="div-contacto">
-            <div class="header-descripciones" >
-                <h2 >CONTACTO</h2>
-            </div>
-            <div class="sobre-mi" data-aos="zoom-in" >
-                <div class="descripcion-contacto sombras">
-                    <!-- <h3>David Nava Garcia</h3> -->
-                    
-                        <div class="email contenedores-contacto">
-                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=david.nava.garcia4@gmail.com" target="_blank">
-                            <svg width="25px" height="25px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
-                            </a>
-                            <p>david.nava.garcia4@gmail.com</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>Hola, soy <span>David Nava</span></h1>
+                        <h2>Desarrollador de Software</h2>
+                        <p>Especializado en tecnologías .NET, C#, ASP.NET MVC y desarrollo de APIs.</p>
+                        <div class="hero-buttons">
+                            <a href="#contact" class="btn btn-primary">Contáctame</a>
+                            <a href="files/CV_David_Nava_Garcia_Desarrollador_Software.NET.pdf" class="btn btn-success download-cv" download>Descargar CV</a>
                         </div>
-                        <div class="email contenedores-contacto">
-                             <a href="https://wa.me/7641291840" target="_blank">
-                            <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-                        </a>
-                            <p>Telefono: +52 764 129 1840</p>
-                        </div>
-                        <div class="email contenedores-contacto">
-                            <a href="https://maps.app.goo.gl/Ls1V4uSeTYZe55NN8" target="_blank">
-                            <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
-                        </a>
-                            <p>Zacatlán, Puebla. 73310, México</p>
-                            
-                        </div>
-
-                        <div class="contenedores-contacto contenedores-contacto-redes">
-                            <div class="icono-github">
-                                <a href="https://github.com/DavidNva" target="_blank">
-                                <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                            </a>
-                            </div>
-
-                            <div class="icono-gmail">
-                                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=david.nava.garcia4@gmail.com" target="_blank">
-                                <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></svg>
-                            </a>
-                            </div>
-
-                            <div class="icono-twitter">
-                                <a href="https://twitter.com/DavidNvaG" target="_blank">
-                                <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
-                            </a>
-                            </div>
+                        <div class="social-icons">
+                            <a href="https://github.com/DavidNva" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=david.nava.garcia4@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
                            
-                            
+                            <a href="https://davidnavadev.netlify.app" target="_blank"><i class="fas fa-globe"></i></a>
+                            <a href="https://www.linkedin.com/in/david-nava-garcia/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+          
                         </div>
-                       
-                 
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="images/perfil_original.jpg" alt="David Nava" class="img-fluid rounded-circle">
+                    </div>
                 </div>
             </div>
         </div>
-        
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
     </section>
-</main>
-    <footer class="footer">
-        <p>Todos los derechos reservados 2024  &copy; DAVID NAVA GARCIA</p> 
-    </footer>
-   
-    <script>
-        
-        function mostrarBarraLateral(){
-            const barralateral = document.querySelector('.barra-lateral')
-            barralateral.style.display = 'flex'
-        }
 
-        function ocultarBarraLateral(){
-            const barralateraln = document.querySelector('.barra-lateral')
-            barralateraln.style.display = 'none'
-        }
-    </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-   </script>
+    <!-- About Me Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Sobre Mí</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="about-image">
+                        <img src="images/perfil_original.jpg" alt="David Nava" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <p>Soy un <strong>Desarrollador de Software</strong>
+                             con experiencia en tecnologías .NET, C#, ASP.NET MVC y desarrollo de APIs. Me adapto rápidamente a nuevos entornos y tecnologías, enfocándome en crear soluciones eficientes que aporten valor real.
+                             Soy un apasionado por la programación, el fútbol y el café. Disfruto escuchar música y siempre estoy en busca de nuevos conocimientos. </p>        
+                        <p>He implementado proyectos que integran IA y análisis de datos para sistemas empresariales. Me destaco por mi capacidad de adaptación, resolución creativa de problemas y aprendizaje continuo.</p>
+                        
+                        <!-- <div class="personal-info">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <span>Nombre:</span> David Nava García
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Email:</span> david.nava.garcia4@gmail.com
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Teléfono:</span> (52) 764 129 1840
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <span>Ciudad:</span> Puebla de Zaragoza, México
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Idiomas:</span> Español (Nativo), Inglés (Intermedio)
+                                    </div>
+                                    <div class="info-item">
+                                        <span>Disponibilidad:</span> Inmediata
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Mis Habilidades</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- <div class="col-lg-6">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="    >
+                        <div class="skill-name-percent d-flex justify-content-between">
+                            <h5>C#</h5>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-percent d-flex justify-content-between">
+                            <h5>ASP.NET MVC</h5>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-percent d-flex justify-content-between">
+                            <h5>JavaScript</h5>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-percent d-flex justify-content-between">
+                            <h5>SQL</h5>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name-percent d-flex justify-content-between">
+                            <h5>HTML5/CSS3</h5>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-6">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="tech-skills-container">
+                        <div class="tech-skill-item">
+                            <!-- <i class="devicon-csharp-plain colored"></i> -->
+                             
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#"/>
+          
+                            <h5>C#</h5>
+                        </div>
+                        <div class="tech-skill-item">
+                            <!-- <i class="devicon-dot-net-plain colored"></i> -->
+                             
+                            <!-- <i class="devicon-dot-net-plain-wordmark colored"></i> -->
+                        
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original-wordmark.svg" alt="ASP.NET MVC"/>
+          
+                            <h5>ASP.NET MVC</h5>
+                        </div>
+                        <div class="tech-skill-item">
+                            <!-- <i class="devicon-javascript-plain colored"></i> -->
+                             
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/>
+          
+                            <h5>JavaScript</h5>
+                        </div>
+                        <div class="tech-skill-item">
+                            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python"/>
+          
+                            <h5>Python</h5>
+                        </div>
+                        <div class="tech-skill-item">
+                            <!-- <i class="devicon-microsoftsqlserver-plain colored"></i>
+                             -->
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"  alt="SQL"/>
+          
+                            <h5>SQL</h5>
+                        </div>
+                        <div class="tech-skill-item">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git"/>
+                            <h5>Git</h5>
+                        </div>
+                        <div class="tech-skill-item">
+                            <!-- <i class="devicon-html5-plain colored"></i> -->
+                             
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5"/>
+          
+                            <h5>HTML5</h5>
+                        </div>
+                        <div class="tech-skill-item">
+                            <!-- <i class="devicon-css3-plain colored"></i> -->
+                             
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="css3"/>
+          
+                            <h5>CSS3</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3>Herramientas y Frameworks</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">.NET Framework</span>
+                        <span class="skill-tag">Entity Framework</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Bootstrap 5</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">SAP Business One SDK</span>
+                        <span class="skill-tag">Flask Básico</span>
+                    </div>
+                    
+                    <h3 class="mt-4">Habilidades Profesionales</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Trabajo en equipo</span>
+                        <span class="skill-tag">Comunicación</span>
+                        <span class="skill-tag">Gestión de tiempos</span>
+                        <span class="skill-tag">Resolución de problemas</span>
+                        <span class="skill-tag">Adaptabilidad</span>
+                        <span class="skill-tag">Aprendizaje rápido</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Experiencia y Educación</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="timeline">
+                        <h3 class="timeline-title">
+                            <i class="fas fa-briefcase"></i> Experiencia Profesional
+                        </h3>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2024 - Presente</div>
+                            <h4>Desarrollador de Software - Staff I</h4>
+                            <h5>Kreston BSG México</h5>
+                            <p>
+                                <ul>
+                                    <li>Mantenimiento y desarrollo de portales web empresariales.</li>
+                                    <li>Optimización de reportes PDF y procesos de timbrado fiscal.</li>
+                                    <li>Desarrollo de interfaces de automatización para SAP Business One usando SDK C#.</li>
+                                    <li>Desarrollo de APIs en Python Flask para procesamiento de documentos con AI.</li>
+                                </ul>
+                                <strong>Tecnologías:</strong> C#, .NET Framework, ASP.NET MVC, Python Flask, SQL Server
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">Agosto - Diciembre 2023</div>
+                            <h4>Desarrollador Web - Servicio Social</h4>
+                            <h5>ITSSNP Zacatlán, Puebla</h5>
+                            <p>
+                                <ul>
+                                    <li>Reestructuración y rediseño completo del sitio web institucional, mejorando la accesibilidad y rendimiento.</li>
+                                </ul>
+                                <strong>Tecnologías:</strong> JavaScript, HTML5, CSS3, Bootstrap 5
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="timeline">
+                        <h3 class="timeline-title">
+                            <i class="fas fa-graduation-cap"></i> Educación
+                        </h3>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - 2024</div>
+                            <h4>Ingeniería Informática</h4>
+                            <h5>Instituto Tecnológico Superior de la Sierra Norte de Puebla</h5>
+                            <!-- <p>Formación especializada en desarrollo de software, sistemas de información y tecnologías web. Base de datos, programacion .NET. Poo, etc. </p> -->
+                            <p>Formación especializada en desarrollo de software y sistemas de información. Conocimientos sólidos en tecnologías web, gestión de bases de datos SQL/MySQL, programación orientada a objetos, desarrollo en .NET Framework y ASP.NET MVC. Experiencia con C#, JavaScript, HTML5, CSS3 y Bootstrap 5. Familiarizado con herramientas de control de versiones como Git y entornos de desarrollo modernos.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">En curso</div>
+                            <h4>Certificaciones y Cursos</h4>
+                            <p>Actualización continua en tecnologías .NET, desarrollo web y bases de datos a través de plataformas como Udemy, EPAM CAMPUS y Microsoft Learn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Mis Proyectos</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="projects-filter text-center">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="web">Web</button>
+                        <button class="filter-btn" data-filter="dotnet">ASP.NET</button>
+                        <button class="filter-btn" data-filter="api">APIs</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="row project-container">
+    <div class="col-md-6 col-lg-4 project-item" data-category="dotnet">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/sigup_web.png" alt="Sistema de Gestión de Unidad de Prácticas" class="img-fluid">
+                <div class="project-overlay">
+                    <div class="project-overlay-content">
+                        <a href="#" class="project-preview" data-bs-toggle="modal" data-bs-target="#projectModal1" title="Leer más sobre el Proyecto"><i class="fas fa-search"></i></a>
+                        <!-- <a href="https://github.com/DavidNva" target="_blank" class="project-link" title="Ver código"><i class="fab fa-github"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h4>Sistema de Gestión de Préstamos y Laboratorios - ITSSNP</h4>
+                <p>ASP.NET MVC, C#, SQL Server</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4 project-item" data-category="api">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/api-chatbot-whatsapp.png" alt="Chatbot Inteligente con WhatsApp y ChatGPT" class="img-fluid">
+                <div class="project-overlay">
+                    <div class="project-overlay-content">
+                        <a href="#" class="project-preview" data-bs-toggle="modal" data-bs-target="#projectModal2" title="Leer más sobre el Proyecto"><i class="fas fa-search"></i></a>
+                        <!-- <a href="https://github.com/DavidNva" target="_blank" class="project-link"><i class="fab fa-github"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h4>Chatbot Inteligente con WhatsApp y ChatGPT</h4>
+                <p>.NET Core 8.0, C#, SQL Server, OpenAI, Webhooks</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4 project-item" data-category="web">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/itssnp_page_2024.png" alt="Rediseño de Sitio Web  Institucional del ITSSNP" class="img-fluid">
+                <div class="project-overlay">
+                    <div class="project-overlay-content">
+                        <a href="https://www.itssnp.edu.mx/" class="project-preview" target="_blank" title="Ir a la página"><i class="fas fa-search"></i></a>
+                        <!-- <a href="https://github.com/DavidNva" target="_blank" class="project-link"><i class="fab fa-github"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h4>Rediseño de Sitio Web  Institucional del ITSSNP</h4>
+                <p>HTML5, CSS3, JavaScript, Bootstrap 5</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 col-lg-4 project-item" data-category="dotnet">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/dashboard_principal_biblioteca.png" alt="Sistema de Gestión de una Biblioteca Pública en Zacatlán" class="img-fluid"> 
+                <div class="project-overlay">
+                    <div class="project-overlay-content">
+                        <a href="#" class="project-preview" data-bs-toggle="modal" data-bs-target="#projectModal4" title="Leer más sobre el Proyecto"><i class="fas fa-search"></i></a>
+                        <a href="https://github.com/DavidNva/BibliotecaWeb" target="_blank" class="project-link" title="Ver código"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h4>Sistema de Gestión de una Biblioteca Pública en Zacatlán</h4>
+                <p>ASP.NET MVC, C#, SQL Server</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-md-6 col-lg-4 project-item" data-category="api">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/miniatura_API_PythonPDF_Flask.png" alt="API para Procesamiento de Documentos" class="img-fluid">
+                <div class="project-overlay">
+                    <div class="project-overlay-content">
+                        <a href="#" class="project-preview" data-bs-toggle="modal" data-bs-target="#projectModal5" title="Leer más sobre el Proyecto"><i class="fas fa-search"></i></a>
+                        <a href="https://github.com/DavidNva/PDF-ProcesamientoDocPDF" target="_blank" class="project-link" title="Ver Código"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h4>API para Procesamiento de Documentos</h4>
+                <p>Python, Flask, OpenAI API (GPT), Google Cloud Run, Docker, Hugging Face, Web API, Postman, FAISS</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4 project-item" data-category="dotnet">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/paypal_integration.png" alt="Integracion de Paypal con ASP.NET MVC" class="img-fluid">
+                <div class="project-overlay">
+                    <div class="project-overlay-content">
+                        <a href="#" class="project-preview" data-bs-toggle="modal" data-bs-target="#projectModal6" title="Leer más sobre el Proyecto"><i class="fas fa-search"></i></a>
+                        <a href="https://github.com/DavidNva/IntegracionPayPal_con_ASP.NET_MVC" target="_blank" class="project-link" title="Ver Código"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h4>Integración de PayPal con ASP.NET MVC</h4>
+                <p>ASP.NET MVC, C#, PayPal API, JavaScript, Bootstrap</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-lg-4 project-item" data-category="web">
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/PortafolioWeb.png" alt="Portafolio Personal" class="img-fluid">
+                <div class="project-overlay">
+                    <div class="project-overlay-content">
+                        <a href="#home" class="project-preview" data-bs-toggle="modal" data-bs-target="#projectModal7" title="Ir a la página"><i class="fas fa-search"></i></a>
+                        <a href="https://github.com/DavidNva/PortafolioWeb" target="_blank" class="project-link" title="Ver Código"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-info">
+                <h4>Portafolio Personal</h4>
+                <p>HTML5, CSS3, JavaScript, Bootstrap 5</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</section>
+
+<!-- Project Modals -->
+
+<div class="modal fade" id="projectModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Sistema de Gestión de Préstamos y Laboratorios - ITSSNP</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="images/sigup_web.png" alt="Sistema de Gestión de Préstamos y Laboratorios" class="img-fluid rounded">
+                    </div>
+                    <div class="col-lg-6">
+                        <h3>Descripción del Proyecto</h3>
+                        <p>Plataforma institucional desarrollada para la <strong>Unidad de Prácticas del ITSSNP</strong>, diseñada para administrar el préstamo de herramientas a estudiantes y gestionar el acceso a laboratorios de manera eficiente y segura.</p>
+                        
+                        <h4>🔧 Módulo de Préstamos de Herramientas</h4>
+                        <ul>
+                            <li>📋 <strong>Registro y control de préstamos:</strong> Préstamo de una o varias herramientas a estudiantes.</li>
+                            <li>🔍 <strong>Búsqueda avanzada:</strong> Filtrado por nombre, código o categoría de herramienta.</li>
+                            <li>🧑‍🎓 <strong>Gestión de estudiantes:</strong> Búsqueda por nombre o número de control.</li>
+                            <li>📊 <strong>Historial y evaluación:</strong> Registro de devoluciones y calificación de estado de herramientas.</li>
+                            <li>⚙️ <strong>Manejo de stock:</strong> Alta, edición y control de herramientas disponibles.</li>
+                        </ul>
+
+                        <h4>🏫 Módulo de Control de Laboratorios</h4>
+                        <ul>
+                            <li>🚪 <strong>Administración de accesos:</strong> Registro de entrada y salida de estudiantes y profesores.</li>
+                            <li>📌 <strong>Control detallado:</strong> Número de alumnos por laboratorio, género, ocupación del aula.</li>
+                            <li>📚 <strong>Historial de uso:</strong> Registro de sesiones, profesores asignados y materias impartidas.</li>
+                        </ul>
+
+                        <h4>🛠 Tecnologías utilizadas:</h4>
+                        <p>C#, ASP.NET MVC, SQL Server, JavaScript, Bootstrap 5, AJAX</p>
+
+                        <div class="project-links">
+                            <!-- <a href="https://github.com/DavidNva" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-github"></i> Ver código
+                            </a> -->
+                            <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-globe"></i> Ver demo</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="modal fade" id="projectModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chatbot Inteligente con WhatsApp y ChatGPT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="images/api-chatbot-whatsapp.png" alt="Chatbot Inteligente con WhatsApp y ChatGPT" class="img-fluid rounded">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>🚀 Ventajas y Usos</h3>
+                            <p>Este chatbot permite la automatización de consultas en bases de datos mediante mensajes de WhatsApp, facilitando el acceso a información sin necesidad de conocimientos técnicos en SQL.</p>
+                            <h4>✨ Beneficios:</h4>
+                            <ul>
+                                <li>💬 <strong>Interacción en tiempo real:</strong> Responde consultas en WhatsApp de forma instantánea.</li>
+                                <li>🤖 <strong>Automatización inteligente:</strong> Conversión de preguntas en lenguaje natural a SQL.</li>
+                                <li>📊 <strong>Optimización de consultas:</strong> Acceso rápido a información sin intervención manual.</li>
+                                <li>🔗 <strong>Integración sencilla:</strong> Compatible con sistemas empresariales existentes.</li>
+                                <li>⏳ <strong>Ahorro de tiempo:</strong> Reduce la carga de trabajo del equipo de soporte.</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>🛠️ Descripción Técnica del Proyecto</h3>
+                            <p>API en .NET Core 8.0 que conecta una base de datos con la API de WhatsApp Cloud, permitiendo a los usuarios interactuar con un chatbot que interpreta consultas en lenguaje natural y las convierte en SQL mediante OpenAI.</p>
+                            <h4>📌 Características principales:</h4>
+                            <ul>
+                                <li>📡 <strong>Conexión con WhatsApp Cloud API:</strong> Envía y recibe mensajes automáticamente.</li>
+                                <li>🔄 <strong>Webhooks en tiempo real:</strong> Procesamiento de mensajes entrantes de forma dinámica.</li>
+                                <li>📝 <strong>Conversión de lenguaje natural a SQL:</strong> Utiliza ChatGPT para interpretar y ejecutar consultas.</li>
+                                <li>💾 <strong>Integración con SQL Server:</strong> Consulta bases de datos y devuelve respuestas automatizadas.</li>
+                                <li>🛠️ <strong>Pruebas con Postman:</strong> Validación y depuración de la API antes del despliegue.</li>
+                            </ul>
+                            <h4>🖥️ Tecnologías utilizadas:</h4>
+                            <p>C#, .NET Core 8.0, SQL Server, WhatsApp Cloud API, Webhooks, OpenAI API, Postman</p>
+                            <div class="project-links">
+                                <!-- <a href="https://github.com/DavidNva" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Ver código</a> -->
+                                <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-globe"></i> Ver demo</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    
+
+    <div class="modal fade" id="projectModal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sistema de Gestión de Biblioteca Pública en Zacatlán</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="images/proyecto_bibliotecaweb.png" alt="Sistema de Gestión de Biblioteca" class="img-fluid rounded">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>Descripción del Proyecto</h3>
+                            <p>Desarrollo de un sistema web para la gestión eficiente de préstamos y administración de una biblioteca pública en Zacatlán. Este proyecto fue desarrollado como parte de la carrera de Ingeniería Informática, aplicando una arquitectura escalable y buenas prácticas en desarrollo web.</p>
+                            
+                            <h4>Características principales:</h4>
+                            <ul>
+                                <li>📚 <strong>Gestión completa de préstamos de libros:</strong> Registro, seguimiento y control de devoluciones.</li>
+                                <li>👥 <strong>Administración de usuarios y roles:</strong> Diferenciación entre administrador, bibliotecario, empleado y lector.</li>
+                                <li>🔍 <strong>Filtros avanzados de búsqueda:</strong> Por título, autor, categoría, edición, y más.</li>
+                                <li>📊 <strong>Reportes dinámicos:</strong> Préstamos pendientes, completados y usuarios con retrasos.</li>
+                                <li>🛠 <strong>Base de datos relacional optimizada:</strong> Normalización y eficiencia en consultas.</li>
+                                <li>🖥 <strong>Arquitectura robusta:</strong> Implementación de MVC y separación por capas para mayor escalabilidad.</li>
+                            </ul>
+    
+                            <h4>Tecnologías utilizadas:</h4>
+                            <p>C#, ASP.NET MVC, SQL Server, JavaScript, Bootstrap 5, AJAX</p>
+    
+                            <div class="project-links">
+                                <a href="https://github.com/DavidNva/BibliotecaWeb" target="_blank" class="btn btn-primary">
+                                    <i class="fab fa-github"></i> Ver código
+                                </a>
+                                <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-globe"></i> Ver demo</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="projectModal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">API de Procesamiento de Documentos PDF con Inteligencia Artificial</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="images/miniatura_API_PythonPDF_Flask.png" alt="API de Procesamiento de Documentos PDF" class="img-fluid rounded">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>🚀 Ventajas y Usos</h3>
+                            <p>Esta API permite la extracción y análisis de información desde documentos PDF, facilitando la automatización de procesos de lectura y búsqueda de datos clave.</p>
+                            <h4>✨ Beneficios:</h4>
+                            <ul>
+                                <li>📄 <strong>Extracción automatizada de texto:</strong> Convierte archivos PDF en datos estructurados.</li>
+                                <li>🔍 <strong>Búsqueda inteligente:</strong> Encuentra información relevante dentro de documentos extensos.</li>
+                                <li>🤖 <strong>Procesamiento con IA:</strong> Usa OpenAI para interpretar y responder consultas sobre el contenido.</li>
+                                <li>📊 <strong>Integración sencilla:</strong> Compatible con bases de datos y otros sistemas empresariales.</li>
+                                <li>⏳ <strong>Ahorro de tiempo:</strong> Reduce la necesidad de revisión manual de documentos.</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>🛠️ Descripción Técnica del Proyecto</h3>
+                            <p>API desarrollada en .NET Core 8.0 que permite la carga, análisis y consulta de documentos PDF. Utiliza OpenAI para la interpretación del contenido y ofrece una interfaz para consultas mediante lenguaje natural.</p>
+                            <h4>📌 Características principales:</h4>
+                            <ul>
+                                <!-- <li>📂 <strong>Carga y almacenamiento de PDFs:</strong> Permite la subida de documentos y su procesamiento.</li>
+                                <li>🔄 <strong>Extracción de texto con OCR:</strong> Detecta contenido en PDFs escaneados.</li> -->
+                                <li>🔄 <strong>Analisis de documentos PDF</strong></li> 
+                                <li>📝 <strong>Consultas en lenguaje natural:</strong> Permite realizar preguntas sobre el contenido de los PDFs.</li>
+                                <li>💾 <strong>Integración con SQL Server:</strong> Guarda y recupera datos extraídos de los documentos.</li>
+                                <li>🛠️ <strong>Pruebas con Postman:</strong> Validación y depuración de la API antes del despliegue.</li>
+                            </ul>
+                            <h4>🖥️ Tecnologías utilizadas:</h4>
+                            <p>Python, Flask, OpenAI API (GPT), Google Cloud Run, Docker, Hugging Face, Web API, Postman, FAISS</p>
+                        <div class="project-links">
+                                <a href="https://github.com/DavidNva/PDF-ProcesamientoDocPDF" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Ver código</a>
+                                <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-globe"></i> Ver demo</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="projectModal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Integración de PayPal con ASP.NET MVC</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <img src="images/paypal_integration.png" alt="Integración de PayPal con ASP.NET MVC" class="img-fluid rounded">
+                        </div>
+                        <div class="col-lg-6">
+                            <h3>🚀 Objetivo del Proyecto</h3>
+                            <p>Este proyecto es un ejemplo práctico de cómo integrar PayPal en una aplicación ASP.NET MVC para permitir pagos en línea.</p>
+                            <h4>✨ Beneficios:</h4>
+                            <ul>
+                                <li>💳 <strong>Pago :</strong> Implementa la API de PayPal para procesar pagos en línea.</li>
+                                <li>⚡ <strong>Integración rápida:</strong> Configuración sencilla para aceptar pagos con PayPal.</li>
+                                <li>🛒 <strong>Carrito de compras:</strong> Simulación de compra con un artículo predefinido.</li>
+                                <li>🔗 <strong>Conexión con PayPal Sandbox:</strong> Permite realizar pruebas sin afectar cuentas reales.</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3>🛠️ Descripción Técnica del Proyecto</h3>
+                            <p>Ejemplo de integración de PayPal en una aplicación ASP.NET MVC, utilizando la API de PayPal para procesar transacciones de pago.</p>
+                            <h4>📌 Características principales:</h4>
+                            <ul>
+                                <li>🔄 <strong>Implementación de pagos con PayPal:</strong> Uso de la API REST de PayPal.</li>
+                                <li>🛍️ <strong>Ejemplo con un solo artículo:</strong> Simulación de compra de un producto.</li>
+                                <li>💾 <strong>Configuración en PayPal Sandbox:</strong> Permite pruebas sin afectar cuentas reales.</li>
+                                <li>🛠️ <strong>Validación de pagos y confirmación de transacciones:</strong> Lógica para gestionar respuestas de PayPal.</li>
+                            </ul>
+                            <h4>🖥️ Tecnologías utilizadas:</h4>
+                            <p>ASP.NET MVC, C#, PayPal REST API, JavaScript, Bootstrap</p>
+                            <div class="project-links">
+                                <a href="https://github.com/DavidNva/IntegracionPayPal_con_ASP.NET_MVC" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i> Ver código</a>
+                                <!-- <a href="#" class="btn btn-secondary"><i class="fas fa-globe"></i> Ver demo</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+<!-- Contact Section -->
+<section id="contact" class="contact section-padding">
+<div class="container">
+<div class="row">
+    <div class="col-12">
+        <div class="section-title text-center">
+            <h2>Contáctame</h2>
+            <div class="line"></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-5">
+        <div class="contact-info">
+            <h3>¿Tienes un proyecto en mente?</h3>
+            <!-- <p>Estoy disponible para trabajar en proyectos freelance y oportunidades laborales. No dudes en contactarme a través de cualquiera de estos medios.</p> -->
+            <p>Estoy disponible para trabajar en proyectos freelance. No dudes en contactarme a través de cualquiera de estos medios.</p>
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="text">
+                    <h5>Ubicación</h5>
+                    <p>Puebla de Zaragoza, México</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="text">
+                    <h5>Email</h5>
+                    <p>david.nava.garcia4@gmail.com</p>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="text">
+                    <h5>Teléfono</h5>
+                    <p>(52) 764 129 1840</p>
+                </div>
+            </div>
+            <div class="social-icons social-icons-footer mt-4">
+                <a href="https://github.com/DavidNva" target="_blank"><i class="fab fa-github"></i></a>
+                
+                <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&to=david.nava.garcia4@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                <a href="https://davidnavadev.netlify.app" target="_blank"><i class="fas fa-globe"></i></a>
+                
+                <a href="https://www.linkedin.com/in/david-nava-garcia/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7">
+        <div class="contact-form">
+            <form id="contactForm" action="https://formspree.io/f/mgvavalj" method="POST">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Escribe tu nombre" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Escribe tu email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Asunto" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+        <div class="footer-text">
+            <p>&copy; 2025 David Nava García. Todos los derechos reservados.</p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="footer-links text-md-end">
+            <a href="#home">Inicio</a>
+            <a href="#about">Sobre mí</a>
+            <a href="#projects">Proyectos</a>
+            <a href="#contact">Contacto</a>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+
+<!-- Back to Top -->
+<a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
 </body>
 </html>
